@@ -28,7 +28,8 @@ export default {
         background: "#000212",
         white: "#fff",
         "off-white": "#f7f8f8",
-        "transparent-white": "rgba(255, 255, 255, 0.08)",
+        "transparent-white-primary": "rgba(255, 255, 255, 0.08)",
+        "transparent-white-secondary": "rgba(255, 255, 255, 0.2)",
         grey: "#858699",
         "grey-dark": "#222326",
         "primary-text": "#b4bcd0",
@@ -76,10 +77,15 @@ export default {
 
       boxShadow: {
         primary: "rgba(80, 63, 205, 0.5) 0px 1px 40px",
+        secondary: "rgba(80, 63, 205, 0.15) 2px 4px 20px",
       },
 
       transitionDelay: {
         0: "0ms",
+      },
+
+      transitionTimingFunction: {
+        nav: "all 0.25s cubic-bezier(0.645,0.045,0.355,1)",
       },
 
       keyframes: {
