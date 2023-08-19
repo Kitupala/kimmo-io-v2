@@ -10,13 +10,13 @@ import {
 function Footer() {
   return (
     <footer className="mt-32 text-sm">
-      <Container className="flex flex-col justify-between border-t border-transparent-white py-14 sm:flex-row">
+      <Container className="border-transparent-white-primary flex flex-col justify-between border-t py-14 sm:flex-row">
         <div>
           <div className="flex h-full flex-row justify-between sm:flex-col">
             <div className="flex items-center self-start">
               <Logo className="mr-4 h-4 fill-off-white" />
             </div>
-            <div className="flex items-center space-x-4 text-lg text-grey [&_a:hover]:text-off-white [&_a]:duration-300 hover:[&_a]:-translate-y-0.5 sm:[&_a]:-translate-y-2 sm:hover:[&_a]:-translate-y-3.5">
+            <div className="flex items-center space-x-4 text-lg text-grey [&_a:hover]:text-off-white [&_a]:duration-300 hover:[&_a]:-translate-y-0.5">
               <a
                 href="https://linkedin.com/in/kimmotuupanen"
                 target="_blank"
@@ -99,7 +99,7 @@ function Footer() {
             </span>{" "}
             typeface.
             <br />
-            <span className="flex items-center pt-2 text-xxs">
+            <span className="mb-[-4px] flex items-center pt-2 text-xxs">
               2023&thinsp;
               <span className="text-xs font-extralight">Ⓒ</span>
               &thinsp;Kitupala | All Rights Reserved
