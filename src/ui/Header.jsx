@@ -33,8 +33,8 @@ function Header() {
   }
 
   return (
-    <header className="fixed left-0 top-0 z-20 w-full saturate-100 backdrop-blur-[30px]">
-      <Container className="flex h-navigation-height border-b border-transparent-white">
+    <header className="fixed left-0 top-0 z-30 w-full saturate-100 backdrop-blur-[30px]">
+      <Container className="border-transparent-white-primary flex h-navigation-height border-b">
         <div className="flex items-center text-md">
           <LogoIcon className="mr-1 h-5 w-5 fill-off-white" />
           <Logo className="mr-8 h-4 fill-off-white" />
@@ -56,7 +56,7 @@ function Header() {
           >
             <ul
               className={classNames(
-                "flex h-full flex-col ease-in sm:flex-row sm:items-center [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[colors,transform] [&_a]:duration-500 sm:[&_a]:translate-y-0 sm:[&_a]:text-sm [&_a]:sm:transition-colors [&_li]:ml-6 [&_li]:mr-6 [&_li]:border-b [&_li]:border-grey-dark sm:[&_li]:border-none",
+                "flex h-full flex-col ease-in sm:flex-row sm:items-center [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[colors,transform] [&_a]:duration-500 sm:[&_a]:translate-y-0 sm:[&_a]:text-sm sm:[&_a]:transition-colors [&_li]:ml-6 [&_li]:mr-6 [&_li]:border-b [&_li]:border-grey-dark sm:[&_li]:border-none",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-[0]",
               )}
             >
