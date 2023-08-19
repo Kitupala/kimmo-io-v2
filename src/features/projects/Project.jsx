@@ -63,7 +63,7 @@ function Project() {
       <div className="-z-20 col-span-12 col-end-12 row-span-full md:col-span-7 md:col-end-12">
         <img
           className="min-h-full rounded-md object-cover opacity-70 md:object-contain"
-          src="../src/data/imgs/omnifood.jpg"
+          src="/images/omnifood.jpg"
         />
       </div>
 

@@ -16,7 +16,7 @@ function Hero() {
 
         <div className="mb-13 flex animate-zoom-in place-content-center opacity-0 [--animation-delay:900ms]">
           <img
-            src="../src/data/imgs/ai-kt.jpg"
+            src="/images/ai-kt.jpg"
             alt="Futuristic AI generated picture of me"
             className="border-transparent-white-primary h-[198px] rounded-full border-2 bg-hero-glow shadow-primary"
           />
