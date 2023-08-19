@@ -12,8 +12,8 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
       // secondary: ["bg-page-gradient hover:text-shadow hover:shadow-primary"],
 
       tertiary: [
-        "text-off-white bg-white bg-opacity-10 border border-transparent-white backdrop-filter-[12px] hover:bg-opacity-20 transition-colors ease-in",
-        "[&_.icon-wrapper]:bg-transparent-white [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:px-2 [&_.icon-wrapper]:ml-2 [&_.icon-wrapper]:-mr-2 ",
+        "text-off-white bg-white bg-opacity-10 border border-transparent-white-primary backdrop-filter-[12px] hover:bg-opacity-20 transition-colors ease-in",
+        "[&_.icon-wrapper]:bg-transparent-white-primary [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:px-2 [&_.icon-wrapper]:ml-2 [&_.icon-wrapper]:-mr-2 ",
       ],
     },
     size: {
