@@ -1,20 +1,21 @@
 import Container from "../../ui/Container";
 import { IoConstructOutline } from "react-icons/io5";
+import ProjectLayout from "./ProjectLayout";
 
 function Projects() {
   return (
-    <Container className="min-h-[calc(100vh-285px)] overflow-hidden pt-16">
-      <div className="mt-6 flex flex-col text-center">
-        <h2 className="text-gradient my-6 text-6xl tracking-tight sm:text-7xl">
-          Sit tight.
+    <Container className="min-h-[calc(100vh-285px)] overflow-hidden">
+      <div className="mt-16 sm:mt-24">
+        <h2 className="text-gradient mt-5 translate-y-[-1rem] animate-fade-translate-in text-4xl tracking-tight opacity-0 [--animation-delay:200ms] sm:text-6xl md:mb-10">
+          Selected projects
         </h2>
+      </div>
+      <ProjectLayout />
 
-        <p className="mx-5 flex items-center justify-center text-md text-primary-text sm:mx-20 sm:text-lg">
-          I&apos;m currently working on &lt;Projects /&gt; page
-          <br className="block sm:hidden" /> and will launch ASAP...
-          <span className="animate-fade-in-out ml-2 inline-block flex hidden text-3xl md:block">
-            <IoConstructOutline />
-          </span>
+      {/* Comment */}
+      <div className="mt-24">
+        <p className="mt-5 text-md text-sm italic text-grey sm:text-md">
+          (Non-functional layout sample)
         </p>
       </div>
     </Container>
