@@ -57,9 +57,6 @@ export default {
         "primary-gradient":
           "linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%)",
 
-        "secondary-gradient":
-          "radial-gradient(circle, rgba(0,78,146,1) 3%, rgba(0,4,40,1) 100%)",
-
         "mouse-gradient":
           "radial-gradient(600px at var(--x) var(--y), rgba(29, 78, 216, 0.15), transparent 60%);", //HOX
 
@@ -137,5 +134,6 @@ export default {
       },
     },
   },
+
   plugins: [],
 };
