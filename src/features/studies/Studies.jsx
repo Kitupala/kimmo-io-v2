@@ -1,21 +1,23 @@
+import { useData } from "../../context/DataContext";
 import Container from "../../ui/Container";
-import { IoConstructOutline } from "react-icons/io5";
+import Course from "./Course";
 
 function Studies() {
-  return (
-    <Container className="min-h-[calc(100vh-285px)] overflow-hidden pt-16">
-      <div className="mt-6 flex flex-col text-center">
-        <h2 className="text-gradient my-6 text-6xl tracking-tight sm:text-7xl">
-          Sit tight.
-        </h2>
+  const { studies } = useData();
 
-        <p className="mx-5 flex items-center justify-center text-md text-primary-text sm:mx-20 sm:text-lg">
-          I&apos;m currently working on &lt;Studies /&gt; page{" "}
-          <br className="block sm:hidden" /> and will launch ASAP...
-          <span className="animate-fade-in-out ml-2 inline-block flex hidden text-3xl md:block">
-            <IoConstructOutline />
-          </span>
-        </p>
+  return (
+    <Container className="min-h-[calc(100vh-285px)] overflow-hidden">
+      <div className="top-28 sm:top-36 md:fixed">
+        <h2 className="text-gradient mb-6 mt-5 translate-y-[-1rem] animate-fade-translate-in text-4xl tracking-tight opacity-0 [--animation-delay:200ms] sm:text-6xl md:mb-10">
+          Coding courses
+        </h2>
+      </div>
+      <div className="flex items-center justify-end md:mt-28">
+        <ol className="group/list animate-fade-translate-in opacity-0 [--animation-delay:600ms] md:max-w-2xl lg:max-w-4xl">
+          {studies.map((course) => (
+            <Course course={course} key={course.id} />
+          ))}
+        </ol>
       </div>
     </Container>
   );
