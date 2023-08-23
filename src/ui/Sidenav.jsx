@@ -20,7 +20,6 @@ function Sidenav() {
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
                 : "border-l-transparent-white-primary text-off-white",
             )}
-            //
             id="0.1"
             onClick={handleClick}
           >
