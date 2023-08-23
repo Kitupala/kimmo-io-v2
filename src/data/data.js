@@ -185,7 +185,7 @@ export const data = {
       id: "0.7",
       title: "kimmo.io v2.1",
       description:
-        "New site is building up! Navigation and footer along with the hero and projects page are just about finished. Some TLC needed here and there. Here's first glimpse...",
+        "New site is building up! Navigation and footer finished along with the hero, projects and studies page. Some TLC needed here and there. Currently working on abilities...",
       tech: ["HTML", "CSS", "JavaScript", "React"],
       link: [
         [
