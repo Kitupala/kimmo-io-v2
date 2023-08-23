@@ -2,7 +2,7 @@ import { HiMiniArrowUpRight } from "react-icons/hi2";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 
 import TechPill from "../../ui/TechPill";
-import Certification from "./Certification";
+import Certificate from "./Certificate";
 import Modal from "../../ui/Modal";
 
 function Course({ course }) {
@@ -52,7 +52,7 @@ function Course({ course }) {
                   </button>
                 </Modal.Open>
                 <Modal.Window name="cert">
-                  <Certification cert={course.certificate} />
+                  <Certificate cert={course.certificate} />
                 </Modal.Window>
               </Modal>
             </li>
