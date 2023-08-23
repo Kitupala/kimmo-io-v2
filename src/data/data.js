@@ -5,7 +5,7 @@ export const data = {
       id: "0.1",
       title: "Omnifood",
       description:
-        "Responsive landing page for a fictional company. Built with modern HTML and CSS.",
+        "Responsive landing page for a fictional food delivery company. Built with modern HTML and CSS.",
       tech: ["HTML", "CSS"],
       link: [
         [
