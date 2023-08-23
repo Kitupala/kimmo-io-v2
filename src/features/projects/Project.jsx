@@ -39,13 +39,22 @@ function Project({ project }) {
       </div>
 
       {/* Project image */}
-      <div className="-z-20 col-span-12 col-end-12 row-span-full md:col-span-7 md:col-end-12">
+      <div className="-z-20 col-span-12 col-end-12 row-span-full flex items-center md:col-span-7 md:col-end-12">
+        <div className="overflow-hidden rounded-md border border-transparent-white-primary">
+          <img
+            className="-z-30 min-h-full object-cover opacity-70 md:object-contain"
+            src={project.image}
+            alt={`Image of ${project.title} app`}
+          />
+        </div>
+      </div>
+      {/* <div className="-z-20 col-span-12 col-end-12 row-span-full md:col-span-7 md:col-end-12">
         <img
           className="min-h-full object-cover opacity-70 md:object-contain"
           src={project.image}
           alt={`Image of ${project.title} app`}
         />
-      </div>
+      </div> */}
 
       {/* Project technologies */}
       <div className="col-span-12 col-end-12 flex flex-col md:z-0 md:row-span-full md:items-end md:justify-end md:pt-2">
