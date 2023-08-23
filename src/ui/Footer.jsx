@@ -10,7 +10,7 @@ import {
 function Footer() {
   return (
     <footer className="mt-32 text-sm">
-      <Container className="border-transparent-white-primary flex flex-col justify-between border-t py-14 sm:flex-row">
+      <Container className="flex flex-col justify-between border-t border-transparent-white-primary py-14 sm:flex-row">
         <div>
           <div className="flex h-full flex-row justify-between sm:flex-col">
             <div className="flex items-center self-start">
@@ -78,12 +78,12 @@ function Footer() {
             , deployed with{" "}
             <span>
               <a
-                href="https://vercel.com/"
+                href="https://app.netlify.com/"
                 className="font-medium text-slate-400 hover:text-slate-300"
                 target="_blank"
                 rel="noreferrer"
               >
-                Vercel
+                Netlify
               </a>
             </span>
             . All text except logo is set in the{" "}
