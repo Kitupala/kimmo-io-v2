@@ -5,6 +5,6 @@ My new personal website / portfolio with contact information and links to my rec
 
 ## On planning stage:
 
-Abilities page
-Light / Dark 
+- Abilities page
+- Light / Dark mode
 
