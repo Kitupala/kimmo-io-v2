@@ -6,6 +6,7 @@ export default {
       screens: {
         "custom-bp": "820px",
       },
+
       fontFamily: {
         sans: '"Titillium Web", sans-serif',
       },
