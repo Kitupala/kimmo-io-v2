@@ -1,5 +1,6 @@
 import { useData } from "../../context/DataContext";
 import Container from "../../ui/Container";
+import Aphorism from "./Aphorism";
 import Course from "./Course";
 
 function Studies() {
@@ -7,13 +8,20 @@ function Studies() {
 
   return (
     <Container className="min-h-[calc(100vh-285px)] overflow-hidden">
-      <div className="top-28 sm:top-36 md:fixed">
-        <h2 className="text-gradient mb-6 mt-5 translate-y-[-1rem] animate-fade-translate-in text-4xl tracking-tight opacity-0 [--animation-delay:200ms] sm:text-6xl md:mb-10">
+      <div className="custom-bp:fixed mt-16 sm:mt-24">
+        <h2 className="text-gradient mb-6 translate-y-[-1rem] animate-fade-translate-in text-4xl tracking-tight opacity-0 [--animation-delay:200ms] sm:mb-8 sm:text-6xl md:mb-10">
           Coding courses
         </h2>
+
+        <div className="relative animate-fade-in opacity-0 [--animation-delay:1500ms]">
+          <div className="custom-bp:block absolute -left-2 -top-60 hidden opacity-40">
+            <Aphorism />
+          </div>
+        </div>
       </div>
-      <div className="flex items-center justify-end md:mt-28">
-        <ol className="group/list animate-fade-translate-in opacity-0 [--animation-delay:600ms] md:max-w-2xl lg:max-w-4xl">
+
+      <div className="custom-bp:justify-end custom-bp:mt-28 flex items-center">
+        <ol className="group/list custom-bp:max-w-2xl animate-fade-in opacity-0 [--animation-delay:800ms] lg:max-w-4xl">
           {studies.map((course) => (
             <Course course={course} key={course.id} />
           ))}
