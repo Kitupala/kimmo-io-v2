@@ -8,10 +8,9 @@ function Project({ project }) {
     <div
       className="grid w-full animate-fade-in grid-cols-11 py-[3px] text-primary-text opacity-0 [--animation-delay:200ms]
       md:pl-[4rem]"
-      id="omnifood"
     >
       {/* Project description */}
-      <div className="border-transparent-white-primary col-span-12 col-end-12 row-span-full flex h-full flex-col self-center border bg-background/[85%] p-6 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
+      <div className="col-span-12 col-end-12 row-span-full flex h-full flex-col self-center border border-transparent-white-primary bg-background/[85%] p-6 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
         <h3
           className="text-xl text-primary-text sm:text-2xl 
           "
@@ -22,7 +21,7 @@ function Project({ project }) {
           <br />
           {project.title}
         </h3>
-        <div className=" md:border-transparent-white-primary mt-5 max-w-lg rounded-md md:max-w-none md:border md:bg-background/80 md:px-5 md:py-4 md:shadow-2xl">
+        <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border md:border-transparent-white-primary md:bg-background/80 md:px-5 md:py-4 md:shadow-2xl">
           <p className="text-md">{project.description}</p>
         </div>
 
@@ -49,7 +48,7 @@ function Project({ project }) {
       </div>
 
       {/* Project technologies */}
-      <div className="col-span-12 col-end-12 row-span-full flex flex-col items-end justify-end p-6 md:z-0 md:p-0">
+      <div className="col-span-12 col-end-12 flex flex-col md:z-0 md:row-span-full md:items-end md:justify-end md:pt-2">
         <ul
           className="mt-1 flex flex-wrap [&_li]:mr-1.5 last:[&_li]:mr-0"
           aria-label="Technologies used"
