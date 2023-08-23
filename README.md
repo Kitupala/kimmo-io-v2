@@ -1,9 +1,9 @@
 # kimmo-io-v2.1
 
-My new personal website / portfolio with contact information and links to my recent studies & projects.
+My new personal website / portfolio with contact information and links to my recent studies & projects. Handcrafted in Visual Studio Code. Built with React and Tailwind CSS, deployed with Vercel.
 
 
-## On planning stage:
+## On planning stage
 
 - Abilities page
 - Light / Dark mode
