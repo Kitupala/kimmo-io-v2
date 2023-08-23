@@ -12,15 +12,16 @@ function Sidenav() {
 
   return (
     <nav className="overflow-auto">
-      <ul className="md:[&_button:hover]:bg-transparent-white-primary mb-6 flex w-max text-md md:mb-0 md:w-[23rem] md:flex-col [&_button:hover]:border-l-slate-50/50 [&_button:hover]:text-grey [&_button]:duration-300 md:[&_button]:px-[2rem] [&_li]:px-[1.2rem]">
+      <ul className="mb-6 flex w-max text-md md:mb-0 md:w-[23rem] md:flex-col [&_button:hover]:border-l-slate-50/50 [&_button:hover]:text-grey md:[&_button:hover]:bg-transparent-white-primary [&_button]:duration-300 md:[&_button]:px-[2rem] [&_li]:px-[1.2rem]">
         <li className="translate-y-[-1rem] animate-fade-translate-in opacity-0 [--animation-delay:200ms]">
           <button
             className={classNames(
-              "border-l-transparent-white-primary flex h-11 w-full items-center md:border-l-2",
+              "flex h-11 w-full items-center  md:border-l-2",
               projectTab === "0.1"
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
-                : "text-off-white",
+                : "border-l-transparent-white-primary text-off-white",
             )}
+            //
             id="0.1"
             onClick={handleClick}
           >
@@ -31,10 +32,10 @@ function Sidenav() {
         <li className="translate-y-[-1rem] animate-fade-translate-in opacity-0 [--animation-delay:800ms]">
           <button
             className={classNames(
-              "border-l-transparent-white-primary flex h-11 w-full items-center md:border-l-2",
+              "flex h-11 w-full items-center md:border-l-2",
               projectTab === "0.2"
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
-                : "text-off-white",
+                : "border-l-transparent-white-primary text-off-white",
             )}
             id="0.2"
             onClick={handleClick}
@@ -46,10 +47,10 @@ function Sidenav() {
         <li className="translate-y-[-1rem] animate-fade-translate-in opacity-0 [--animation-delay:900ms]">
           <button
             className={classNames(
-              "border-l-transparent-white-primary flex h-11 w-full items-center md:border-l-2",
+              "flex h-11 w-full items-center md:border-l-2",
               projectTab === "0.3"
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
-                : "text-off-white",
+                : "border-l-transparent-white-primary text-off-white",
             )}
             id="0.3"
             onClick={handleClick}
@@ -61,10 +62,10 @@ function Sidenav() {
         <li className="translate-y-[-1rem] animate-fade-translate-in opacity-0 [--animation-delay:1000ms]">
           <button
             className={classNames(
-              "border-l-transparent-white-primary flex h-11 w-full items-center md:border-l-2",
+              "flex h-11 w-full items-center  md:border-l-2",
               projectTab === "0.4"
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
-                : "text-off-white",
+                : "border-l-transparent-white-primary text-off-white",
             )}
             id="0.4"
             onClick={handleClick}
@@ -76,10 +77,10 @@ function Sidenav() {
         <li className="translate-y-[-1rem] animate-fade-translate-in opacity-0 [--animation-delay:1100ms]">
           <button
             className={classNames(
-              "border-l-transparent-white-primary flex h-11 w-full items-center md:border-l-2",
+              "flex h-11 w-full items-center  md:border-l-2",
               projectTab === "0.5"
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
-                : "text-off-white",
+                : "border-l-transparent-white-primary text-off-white",
             )}
             id="0.5"
             onClick={handleClick}
@@ -91,10 +92,10 @@ function Sidenav() {
         <li className="translate-y-[-1rem] animate-fade-translate-in opacity-0 [--animation-delay:1200ms]">
           <button
             className={classNames(
-              "border-l-transparent-white-primary flex h-11 w-full items-center md:border-l-2",
+              "flex h-11 w-full items-center  md:border-l-2",
               projectTab === "0.6"
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
-                : "text-off-white",
+                : "border-l-transparent-white-primary text-off-white",
             )}
             id="0.6"
             onClick={handleClick}
@@ -106,10 +107,10 @@ function Sidenav() {
         <li className="translate-y-[-1rem] animate-fade-translate-in opacity-0 [--animation-delay:1300ms]">
           <button
             className={classNames(
-              "border-l-transparent-white-primary flex h-11 w-full items-center md:border-l-2",
+              "flex h-11 w-full items-center  md:border-l-2",
               projectTab === "0.7"
                 ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
-                : "text-off-white",
+                : "border-l-transparent-white-primary text-off-white",
             )}
             id="0.7"
             onClick={handleClick}
