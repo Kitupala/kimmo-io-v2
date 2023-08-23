@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "custom-bp": "820px",
+      },
       fontFamily: {
         sans: '"Titillium Web", sans-serif',
       },
@@ -75,6 +78,10 @@ export default {
       boxShadow: {
         primary: "rgba(80, 63, 205, 0.5) 0px 1px 40px",
         secondary: "rgba(80, 63, 205, 0.15) 2px 4px 20px",
+      },
+
+      dropShadow: {
+        primary: "rgba(80, 63, 205, 0.5) 0px 1px 40px",
       },
 
       transitionDelay: {
