@@ -2,7 +2,8 @@
 
 My new personal website / portfolio with contact information and links to my recent studies & projects.
 
-### On planning stage
+
+## On planning stage:
 
 Abilities page
 Light / Dark 
