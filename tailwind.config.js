@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        "custom-bp-sm": "400px",
+        "custom-bp-xs": "400px",
+        "custom-bp-sm": "570px",
         "custom-bp-md": "820px",
       },
 
