@@ -1,7 +1,7 @@
-import { useData } from "../context/DataContext";
+import { useData } from "../../context/DataContext";
 import classNames from "classnames";
 
-function SidenavButton({ id, title }) {
+function SideNavButton({ id, title }) {
   const { dispatch, projectTab } = useData();
 
   function handleClick(e) {
@@ -29,4 +29,4 @@ function SidenavButton({ id, title }) {
   );
 }
 
-export default SidenavButton;
+export default SideNavButton;

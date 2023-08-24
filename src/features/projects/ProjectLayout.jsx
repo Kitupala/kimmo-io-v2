@@ -1,4 +1,4 @@
-import SideNav from "../../ui/SideNav";
+import SideNav from "./SideNav";
 import Project from "./Project";
 import { useData } from "../../context/DataContext";
 
