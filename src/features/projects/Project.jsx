@@ -10,7 +10,7 @@ function Project({ project }) {
       md:pl-[4rem]"
     >
       {/* Project description */}
-      <div className="col-span-12 col-end-12 row-span-full flex h-full flex-col self-center border border-transparent-white-primary bg-background/[85%] p-6 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
+      <div className="col-span-12 col-end-12 row-span-full flex h-full flex-col self-center rounded-md border border-transparent-white-primary bg-background/[85%] px-6 py-2 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
         <h3
           className="text-xl text-primary-text sm:text-2xl 
           "
@@ -26,7 +26,7 @@ function Project({ project }) {
         </div>
 
         {/* Project links */}
-        <div className="z-20 row-span-full flex space-x-4 pt-6 text-2xl text-grey md:col-span-6 md:col-start-1 [&_a:hover]:text-off-white [&_a]:duration-300">
+        <div className="z-20 row-span-full flex space-x-4 pb-4 pt-6 text-2xl text-grey md:col-span-6 md:col-start-1 [&_a:hover]:text-off-white [&_a]:duration-300">
           {links?.map((link) => (
             <IconLink
               label={link.at(0).linkData.label}
@@ -42,7 +42,7 @@ function Project({ project }) {
       <div className="-z-20 col-span-12 col-end-12 row-span-full flex items-center md:col-span-7 md:col-end-12">
         <div className="overflow-hidden rounded-md border border-transparent-white-primary">
           <img
-            className="-z-30 min-h-full object-cover opacity-70 md:object-contain"
+            className="custom-bp-sm:block -z-30 hidden min-h-full object-cover opacity-60 md:object-contain"
             src={project.image}
             alt={`Image of ${project.title} app`}
           />
