@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        "custom-bp": "820px",
+        "custom-bp-sm": "400px",
+        "custom-bp-md": "820px",
       },
 
       fontFamily: {
