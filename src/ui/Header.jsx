@@ -34,7 +34,7 @@ function Header() {
 
   return (
     <header className="fixed left-0 top-0 z-30 w-full saturate-100 backdrop-blur-[30px]">
-      <Container className="border-transparent-white-primary flex h-navigation-height border-b">
+      <Container className="flex h-navigation-height border-b border-transparent-white-primary">
         <div className="flex items-center text-md">
           <LogoIcon className="mr-1 h-5 w-5 fill-off-white" />
           <Logo className="mr-8 h-4 fill-off-white" />
@@ -87,7 +87,7 @@ function Header() {
           {/* <Button to="#" variant="secondary">
             Contact
           </Button> */}
-          <button>
+          <button className="cursor-not-allowed">
             <LuLightbulb />
           </button>
         </div>
