@@ -1,12 +1,10 @@
-import { Outlet, useNavigation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Header from "./Header";
 import Footer from "./Footer";
 import { useMouseGradient } from "../hooks/useMouseGradient";
 
 function AppLayout() {
-  // const navigation = useNavigation();
-  // const isLoading = navigation.state === "loading";
   const gradientRef = useMouseGradient();
 
   return (

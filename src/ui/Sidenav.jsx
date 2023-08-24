@@ -1,7 +1,7 @@
 import { useData } from "../context/DataContext";
-import SideNavButton from "./SideNavButton";
+import SidenavButton from "./SidenavButton";
 
-function SideNav() {
+function Sidenav() {
   const { projects } = useData();
 
   return (
@@ -9,7 +9,7 @@ function SideNav() {
       <ul className="mb-6 flex w-max text-md md:mb-0 md:w-[23rem] md:flex-col [&_button:hover]:border-l-slate-50/50 [&_button:hover]:text-grey md:[&_button:hover]:bg-transparent-white-primary [&_button]:duration-300 md:[&_button]:px-[2rem] [&_li]:px-[1.2rem]">
         {/* Mapping projects to render link buttons */}
         {projects.map((project) => (
-          <SideNavButton
+          <SidenavButton
             id={project.id}
             title={project.title}
             key={project.id}
@@ -20,4 +20,4 @@ function SideNav() {
   );
 }
 
-export default SideNav;
+export default Sidenav;
