@@ -7,4 +7,4 @@ My new personal website / portfolio with contact information and links to my rec
 
 - Abilities page
 - Light / Dark mode
-
+- CTA / Contact form
