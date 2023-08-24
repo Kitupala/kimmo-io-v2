@@ -1,4 +1,4 @@
-import Sidenav from "../../ui/Sidenav";
+import SideNav from "../../ui/SideNav";
 import Project from "./Project";
 import { useData } from "../../context/DataContext";
 
@@ -10,7 +10,7 @@ function ProjectLayout() {
 
   return (
     <div className="my-5 md:flex">
-      <Sidenav />
+      <SideNav />
       {projectIsVisible && (
         <Project project={currentProject} key={currentProject.id} />
       )}
