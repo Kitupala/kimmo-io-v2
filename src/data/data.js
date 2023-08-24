@@ -65,7 +65,7 @@ export const data = {
       id: "0.3",
       title: "Fast React Pizza Co.",
       description:
-        "App uses React Router and Redux Toolkit. Styling implemented using Tailwind CSS framework.",
+        "React app for ordering pizzas. App uses React Router and Redux Toolkit. Styling implemented using Tailwind CSS framework.",
       tech: ["HTML", "CSS", "JavaScript", "React"],
       link: [
         [
@@ -95,7 +95,7 @@ export const data = {
       id: "0.4",
       title: "Today I Learned",
       description:
-        "Full-stack web application with HTML, CSS, JavaScript, React and Supabase.",
+        "Small app for listing facts. Implemented with HTML, CSS, JavaScript, React and Supabase.",
       tech: ["HTML", "CSS", "JavaScript", "React", "Supabase"],
       link: [
         [
@@ -155,7 +155,7 @@ export const data = {
       id: "0.6",
       title: "The Wild Oasis",
       description:
-        "The biggest and most advanced React project so far. Including React Router, React Query, React Hook Form, Context Api and styled-components, hosted by Supabase.",
+        "The biggest and most advanced React project so far. Internal booking SPA for the hotel company. Including React Router, React Query, React Hook Form, Context Api and styled-components, hosted by Supabase.",
       tech: ["HTML", "CSS", "JavaScript", "React", "Supabase"],
       link: [
         [
@@ -200,7 +200,38 @@ export const data = {
       ],
       image: "/images/kimmo-io-v2.png",
     },
+
+    // kimmo.io v1.0
+    // {
+    //   id: "0.8",
+    //   title: "kimmo.io v1.0",
+    //   description:
+    //     "Move along, there is nothing to see here!;) First version of this website from six months ago. Featured as a reference of my learning curve.",
+    //   tech: ["HTML", "CSS", "JavaScript"],
+    //   link: [
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Github link",
+    //           href: "https://github.com/Kitupala/kimmo-io/",
+    //           icon: "SiGithub",
+    //         },
+    //       },
+    //     ],
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Netlify link",
+    //           href: "https://kimmo-io.netlify.app/",
+    //           icon: "SiNetlify",
+    //         },
+    //       },
+    //     ],
+    //   ],
+    //   image: "/images/kimmoio.jpg",
+    // },
   ],
+
   studies: [
     {
       id: "1.1",
