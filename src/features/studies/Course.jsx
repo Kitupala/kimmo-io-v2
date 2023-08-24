@@ -37,10 +37,10 @@ function Course({ course }) {
               </a>
             </div>
           </h3>
-          <p className="mt-2 text-sm leading-normal text-grey">
+          <p className="custom-bp-sm:mb-0 my-2 text-sm leading-normal text-grey">
             {course.description}
           </p>
-          <ul className="mb-4 mt-2 flex flex-wrap">
+          <ul className="custom-bp-sm:block mb-4 mt-2 flex hidden flex-wrap">
             <li className="mr-4">
               <Modal>
                 <Modal.Open opens="cert">
