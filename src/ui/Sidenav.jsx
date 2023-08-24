@@ -1,7 +1,7 @@
 import { useData } from "../context/DataContext";
 // import SideNavButton from "./SideNavButton";
 
-function Sidenav() {
+function SideNav() {
   const { projects } = useData();
 
   return (
@@ -20,4 +20,4 @@ function Sidenav() {
   );
 }
 
-export default Sidenav;
+export default SideNav;
