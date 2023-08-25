@@ -21,7 +21,7 @@ function Studies() {
       </div>
 
       <div className="custom-bp-md:justify-end custom-bp-md:mt-28 flex items-center">
-        <ol className="group/list custom-bp-md:max-w-2xl animate-fade-in opacity-0 [--animation-delay:800ms] lg:max-w-4xl">
+        <ol className="group/list custom-bp-md:max-w-2xl animate-fade-in opacity-0 [--animation-delay:400ms] lg:max-w-4xl">
           {studies.map((course) => (
             <Course course={course} key={course.id} />
           ))}
