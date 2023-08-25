@@ -10,13 +10,6 @@ function Projects() {
         </h2>
       </div>
       <ProjectLayout />
-
-      {/* Comment */}
-      {/* <div className="mt-24">
-        <p className="mt-5 text-md text-sm italic text-grey sm:text-md">
-          (Non-functional layout sample)
-        </p>
-      </div> */}
     </Container>
   );
 }
