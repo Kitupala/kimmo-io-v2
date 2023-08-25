@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import AppLayout from "./ui/AppLayout";
 import Hero from "./features/about/Hero";
-import Works from "./features/projects/Projects";
+import Projects from "./features/projects/Projects";
 import Studies from "./features/studies/Studies";
 import Abilities from "./features/abilities/Abilities";
 
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <Works />,
+        element: <Projects />,
       },
       {
         path: "/studies",
