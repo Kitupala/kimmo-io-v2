@@ -24,9 +24,9 @@ function Footer() {
               >
                 <BsLinkedin />
               </a>
-              <a href="#" rel="noreferrer">
+              {/* <a href="#" rel="noreferrer">
                 <BsFacebook />
-              </a>
+              </a> */}
               <a
                 href="https://github.com/Kitupala"
                 target="_blank"
