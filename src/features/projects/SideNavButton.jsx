@@ -10,7 +10,7 @@ function SideNavButton({ id, title, index }) {
   }
 
   const animationStyle = {
-    animationDelay: `${index * 150}ms`,
+    animationDelay: `${(index + 1) * 150}ms`,
     animationFillMode: "both",
   };
 
