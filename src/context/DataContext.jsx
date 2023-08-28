@@ -6,6 +6,7 @@ const DataContext = createContext();
 const initialState = {
   projects: [...data.projects],
   studies: [...data.studies],
+  abilities: [...data.abilities],
   projectIsVisible: true,
   projectTab: "0.1",
 };
@@ -25,8 +26,10 @@ function reducer(state, action) {
 }
 
 function DataProvider({ children }) {
-  const [{ projects, projectIsVisible, projectTab, studies }, dispatch] =
-    useReducer(reducer, initialState);
+  const [
+    { projects, projectIsVisible, projectTab, studies, abilities },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   return (
     <DataContext.Provider
@@ -35,6 +38,7 @@ function DataProvider({ children }) {
         projectIsVisible,
         projectTab,
         studies,
+        abilities,
         dispatch,
       }}
     >
