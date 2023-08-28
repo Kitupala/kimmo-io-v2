@@ -341,8 +341,10 @@ export const data = {
       soft: [
         {
           id: "3.1",
-          description:
+          altDdescription:
             "A long career as a professional musician has trained me to be a team player who quickly adopts new tasks and adapts to changing situations. However, I'm basically a systematic introvert who has lots of patience delve into things and for problem solving. I have a great passion for learning how to build things with code. Additionally, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a summary of most important skills I've gained so far. ",
+          description:
+            "Years of experience as a professional musician have taught me the importance of collaboration. I'm able to rapidly familiarize myself with fresh duties and adapt to changing situations. Nevertheless I'm basically a systematic introvert who has lots of patience delve into things and for problem solving. I have a great passion for learning how to build things with code. Additionally, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a summary of most important skills I've gained so far. ",
         },
         {
           id: "3.2",
