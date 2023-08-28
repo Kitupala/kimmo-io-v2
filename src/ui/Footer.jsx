@@ -21,6 +21,7 @@ function Footer() {
                 href="https://linkedin.com/in/kimmotuupanen"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Link to Linkedin"
               >
                 <BsLinkedin />
               </a>
@@ -31,10 +32,11 @@ function Footer() {
                 href="https://github.com/Kitupala"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Link to GitHub"
               >
                 <BsGithub />
               </a>
-              <a href="mailto:kimmo.tuupanen@gmail.com">
+              <a href="mailto:kimmo.tuupanen@gmail.com" aria-label="Email">
                 <BsEnvelopeAtFill />
               </a>
             </div>
