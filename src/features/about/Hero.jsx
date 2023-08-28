@@ -4,21 +4,21 @@ function Hero() {
   return (
     <Container className="overflow-hidden">
       <div className="mt-24 text-center">
-        <h1 className="text-gradient my-5 translate-y-[-1rem] animate-fade-translate-in text-6xl tracking-tight opacity-0 [--animation-delay:200ms] sm:text-8xl">
+        <h1 className="text-gradient my-5 animate-fade-translate-in text-6xl tracking-tight opacity-0 [--animation-delay:200ms] sm:text-8xl">
           Hi I&apos;m Kimmo
         </h1>
 
-        <p className="mb-12 translate-y-[-1rem] animate-fade-translate-in text-lg text-primary-text opacity-0 [--animation-delay:400ms] sm:text-xl">
+        <h2 className="mb-12 translate-y-[-1rem] animate-fade-translate-in text-lg text-primary-text opacity-0 [--animation-delay:400ms] sm:text-xl">
           Self-taught, self-motivated web developer. <br /> I&apos;m a pixel
           perfectionist <br className="block sm:hidden" /> &mdash; in a good
           way.
-        </p>
+        </h2>
 
         <div className="mb-13 flex animate-zoom-in place-content-center opacity-0 [--animation-delay:900ms]">
           <img
             src="/images/ai-kt.jpg"
             alt="Futuristic AI generated picture of me"
-            className="border-transparent-white-primary h-[198px] rounded-full border-2 bg-hero-glow shadow-primary"
+            className="h-[198px] rounded-full border-2 border-transparent-white-primary bg-hero-glow shadow-primary"
           />
         </div>
 
