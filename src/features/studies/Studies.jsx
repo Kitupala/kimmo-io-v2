@@ -9,7 +9,7 @@ function Studies() {
   return (
     <Container className="min-h-[calc(100vh-285px)] overflow-hidden">
       <div className="custom-bp-md:fixed mt-16 sm:mt-24">
-        <h2 className="text-gradient mb-6 translate-y-[-1rem] animate-fade-translate-in text-4xl tracking-tight opacity-0 [--animation-delay:200ms] sm:mb-8 sm:text-6xl md:mb-10">
+        <h2 className="text-gradient mb-6  animate-fade-translate-in text-4xl tracking-tight opacity-0 [--animation-delay:200ms] sm:mb-8 sm:text-6xl md:mb-10">
           Coding courses
         </h2>
 
