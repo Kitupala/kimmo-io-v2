@@ -23,7 +23,7 @@ function SideNavButton({ id, title, index }) {
         className={classNames(
           "z-50 flex h-11 w-full items-center md:border-l-2",
           projectTab === id
-            ? "pointer-events-none border-l-slate-50/50 text-[#858699]"
+            ? "pointer-events-none border-l-slate-50/50 text-grey"
             : "border-l-transparent-white-primary text-off-white",
         )}
         id={id}
