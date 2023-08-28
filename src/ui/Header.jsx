@@ -87,7 +87,10 @@ function Header() {
           {/* <Button to="#" variant="secondary">
             Contact
           </Button> */}
-          <button className="cursor-not-allowed">
+          <button
+            className="cursor-not-allowed"
+            aria-label="Light/Dark mode toggle"
+          >
             <LuLightbulb />
           </button>
         </div>
