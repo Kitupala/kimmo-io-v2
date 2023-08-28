@@ -185,7 +185,7 @@ export const data = {
       id: "0.7",
       title: "kimmo.io v2.1",
       description:
-        "New site is building up! Navigation and footer finished along with the hero, projects and studies page. Some TLC needed here and there. Currently working on abilities...",
+        "New site is almost finished! Some TLC and refactoring needed here and there. Next step planning on CTA and light mode...",
       tech: ["HTML", "CSS", "JavaScript", "React"],
       link: [
         [
@@ -323,6 +323,41 @@ export const data = {
       started: "Aug",
       completed: "Dec 2020",
       certificate: "/images/xamk-cert.png",
+    },
+  ],
+
+  abilities: [
+    {
+      tech: [
+        { id: "2.1", title: "HTML5", grade: 75 },
+        { id: "2.2", title: "CSS3", grade: 85 },
+        { id: "2.3", title: "Tailwind CSS", grade: 75 },
+        { id: "2.4", title: "JavaScript", grade: 60 },
+        { id: "2.5", title: "React", grade: 50 },
+        { id: "2.6", title: "GitHub", grade: 50 },
+        { id: "2.7", title: "Figma", grade: 40 },
+        // { id: "2.8", title: "Apple / macOS", grade: 85 },
+      ],
+      soft: [
+        {
+          id: "3.1",
+          description:
+            "A long career as a professional musician has trained me to be a team player who quickly adopts new tasks and adapts to changing situations. However, I'm basically a systematic introvert who has lots of patience delve into things and for problem solving. I have a great passion for learning how to build things with code. Additionally, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a summary of most important skills I've gained so far. ",
+        },
+        {
+          id: "3.2",
+          roster: [
+            "creativity",
+            "detail-oriented",
+            "problem-solving",
+            "patience",
+            "motivation",
+            "research skills",
+            "teamwork",
+            "adaptability",
+          ],
+        },
+      ],
     },
   ],
 };
