@@ -17,7 +17,7 @@ export default {
         xxs: "1rem",
         xs: "1.3rem",
         sm: "1.4rem",
-        md: "1.6rem",
+        md: ["1.6rem", "1.3"],
         lg: "1.8rem",
         xl: ["2.2rem", "1.3"],
         "2xl": "2.4rem",
@@ -130,6 +130,29 @@ export default {
           },
           "100%": { opacity: 0.7, transform: "scale(1)" },
         },
+
+        "slide-in-right": {
+          from: {
+            opacity: 0,
+            transform: "translateX(300px)",
+          },
+          to: {
+            opacity: 1,
+            transform: "translateX(0)",
+          },
+        },
+
+        "slide-right": {
+          "0%": {
+            opacity: 0,
+            width: "0%",
+            "animation-timing-function": "cubic-bezier(0.49, 0.01, 0.16, 0.95)",
+          },
+          "100%": {
+            opacity: 1,
+            width: "var(--width)",
+          },
+        },
       },
 
       animation: {
@@ -141,6 +164,11 @@ export default {
         "fade-in-out": "fade-in-out 4000ms ease infinite",
 
         "zoom-in": "zoom-in 1400ms var(--animation-delay, 0ms) forwards",
+
+        "slide-in-right":
+          "slide-in-right 800ms var(--animation-delay, 0ms) ease forwards",
+
+        "slide-right": "slide-right 600ms var(--animation-delay, 0ms) forwards",
       },
     },
   },
