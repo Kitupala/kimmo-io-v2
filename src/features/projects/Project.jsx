@@ -22,6 +22,9 @@ function Project({ project }) {
           {project.title}
         </h3>
         <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border md:border-transparent-white-primary md:bg-background/80 md:px-5 md:py-4 md:shadow-2xl">
+          {project.id === "0.7" && (
+            <span className="text-sm text-grey">Update 28/8</span>
+          )}
           <p className="text-md">{project.description}</p>
         </div>
 
@@ -42,7 +45,7 @@ function Project({ project }) {
       <div className="-z-20 col-span-12 col-end-12 row-span-full flex items-center md:col-span-7 md:col-end-12">
         <div className="overflow-hidden rounded-md border border-transparent-white-primary">
           <img
-            className="custom-bp-sm:block -z-30 hidden min-h-full object-cover opacity-60 md:object-contain"
+            className="-z-30 hidden min-h-full object-cover opacity-60 custom-bp-sm:block md:object-contain"
             src={project.image}
             alt={`Image of ${project.title} app`}
           />
