@@ -5,6 +5,7 @@ import Hero from "./features/about/Hero";
 import Projects from "./features/projects/Projects";
 import Studies from "./features/studies/Studies";
 import Abilities from "./features/abilities/Abilities";
+import Contact from "./features/contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/abilities",
         element: <Abilities />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
