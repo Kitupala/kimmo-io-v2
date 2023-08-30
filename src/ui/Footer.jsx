@@ -1,11 +1,6 @@
 import Container from "./Container";
 import Logo from "./Logo";
-import {
-  BsEnvelopeAtFill,
-  BsFacebook,
-  BsGithub,
-  BsLinkedin,
-} from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 function Footer() {
   return (
@@ -35,9 +30,6 @@ function Footer() {
                 aria-label="Link to GitHub"
               >
                 <BsGithub />
-              </a>
-              <a href="mailto:kimmo.tuupanen@gmail.com" aria-label="Email">
-                <BsEnvelopeAtFill />
               </a>
             </div>
           </div>
