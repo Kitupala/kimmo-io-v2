@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-
 import classNames from "classnames";
+
 import Container from "./Container";
 import Logo from "./Logo";
-import HamburgerIcon from "./HamburgerIcon";
 import LogoIcon from "./LogoIcon";
+import HamburgerIcon from "./HamburgerIcon";
 import { LuLightbulb } from "react-icons/lu";
 
 function Header() {
@@ -42,13 +42,13 @@ function Header() {
 
         <div
           className={classNames(
-            "transition-[visibility] sm:visible",
+            "cbp-header:visible transition-[visibility]",
             hamburgerMenuIsOpen ? "visible" : "invisible delay-500",
           )}
         >
           <nav
             className={classNames(
-              "fixed left-0 top-navigation-height h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity duration-500 sm:relative sm:top-0 sm:block sm:h-auto sm:w-auto sm:translate-x-0 sm:overflow-hidden sm:bg-transparent sm:opacity-100 sm:transition-none",
+              "cbp-header:relative cbp-header:top-0 cbp-header:block cbp-header:h-auto cbp-header:w-auto cbp-header:translate-x-0 cbp-header:overflow-hidden cbp-header:bg-transparent cbp-header:opacity-100 cbp-header:transition-none fixed left-0 top-navigation-height h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity duration-500",
               hamburgerMenuIsOpen
                 ? "translate-x-0 opacity-100"
                 : "translate-x-[-100vw] opacity-0",
@@ -56,7 +56,7 @@ function Header() {
           >
             <ul
               className={classNames(
-                "flex h-full flex-col ease-in sm:flex-row sm:items-center [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[colors,transform] [&_a]:duration-500 sm:[&_a]:translate-y-0 sm:[&_a]:text-sm sm:[&_a]:transition-colors [&_li]:ml-6 [&_li]:mr-6 [&_li]:border-b [&_li]:border-grey-dark sm:[&_li]:border-none",
+                "cbp-header:flex-row cbp-header:items-center cbp-header:[&_a]:translate-y-0 cbp-header:[&_a]:text-sm cbp-header:[&_a]:transition-colors cbp-header:[&_li]:border-none flex h-full flex-col ease-in [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[colors,transform] [&_a]:duration-500 [&_li]:ml-6 [&_li]:mr-6 [&_li]:border-b [&_li]:border-grey-dark",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-[0]",
               )}
             >
@@ -84,9 +84,11 @@ function Header() {
           </nav>
         </div>
         <div className="ml-auto flex h-full items-center text-lg text-grey [&_button:hover]:text-off-white [&_button]:duration-300 ">
-          {/* <Button to="#" variant="secondary">
-            Contact
-          </Button> */}
+          <span className="mr-6 mt-[1px] flex items-center text-sm text-off-white [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:transition-colors [&_a]:duration-200">
+            <NavLink to="contact" onClick={() => handleClick()}>
+              Contact
+            </NavLink>
+          </span>
           <button
             className="cursor-not-allowed"
             aria-label="Light/Dark mode toggle"
@@ -96,7 +98,7 @@ function Header() {
         </div>
 
         <button
-          className="ml-6 sm:hidden"
+          className="cbp-header:hidden ml-6"
           onClick={() => setHamburgerMenuIsOpen((open) => !open)}
         >
           <span className="sr-only">Toggle menu</span>
