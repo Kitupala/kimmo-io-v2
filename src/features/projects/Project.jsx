@@ -10,7 +10,7 @@ function Project({ project }) {
       md:pl-[4rem]"
     >
       {/* Project description */}
-      <div className="col-span-12 col-end-12 row-span-full flex h-full flex-col self-center rounded-md border border-transparent-white-primary bg-background/[85%] px-6 py-2 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
+      <div className="col-span-12 col-end-12 row-span-full flex h-full flex-col self-center rounded-md border border-transparent-white-primary bg-background/20 px-6 py-2 custom-bp-sm:bg-background/80 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
         <h3
           className="text-xl text-primary-text sm:text-2xl 
           "
@@ -21,9 +21,9 @@ function Project({ project }) {
           <br />
           {project.title}
         </h3>
-        <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border md:border-transparent-white-primary md:bg-background/80 md:px-5 md:py-4 md:shadow-2xl">
+        <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border md:border-transparent-white-primary md:bg-background/70 md:px-5 md:py-4 md:shadow-2xl">
           {project.id === "0.7" && (
-            <span className="text-sm text-grey">Update 28/8</span>
+            <span className="text-sm text-grey">Update 31/8</span>
           )}
           <p className="text-md">{project.description}</p>
         </div>
