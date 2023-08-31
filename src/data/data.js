@@ -185,7 +185,7 @@ export const data = {
       id: "0.7",
       title: "kimmo.io v2.1",
       description:
-        "New site is almost finished! Some TLC and refactoring needed here and there. Next step planning on CTA and light mode...",
+        "New site is almost finished! Some TLC and refactoring needed here and there. Planning the next step which might be light mode...",
       tech: ["HTML", "CSS", "JavaScript", "React"],
       link: [
         [
@@ -344,7 +344,7 @@ export const data = {
           altDdescription:
             "A long career as a professional musician has trained me to be a team player who quickly adopts new tasks and adapts to changing situations. However, I'm basically a systematic introvert who has lots of patience delve into things and for problem solving. I have a great passion for learning how to build things with code. Additionally, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a summary of most important skills I've gained so far. ",
           description:
-            "Years of experience as a professional musician have taught me the importance of collaboration. I'm able to rapidly familiarize myself with new tasks and adapt to varying situations. Nevertheless I'm essentially a systematic introvert who has lots of patience to delve into things and for problem solving. I have a great passion for learning how to build things with code. Additionally, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a summary of most important skills I've gained so far. ",
+            "Years of experience as a professional musician have taught me the importance of collaboration. I'm able to rapidly familiarize myself with new tasks and adapt to varying situations. Nevertheless, I'm essentially a systematic introvert with lots of patience for exploring matters and for problem-solving. I have a great passion for learning how to build things with code. In addition, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a review of the most important skills I have acquired up to now.",
         },
         {
           id: "3.2",
