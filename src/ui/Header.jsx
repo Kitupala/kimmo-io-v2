@@ -7,9 +7,11 @@ import Logo from "./Logo";
 import LogoIcon from "./LogoIcon";
 import HamburgerIcon from "./HamburgerIcon";
 import { LuLightbulb } from "react-icons/lu";
+import { useData } from "../context/DataContext";
 
 function Header() {
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
+  const { dispatch } = useData();
 
   useEffect(() => {
     const html = document.querySelector("html");
@@ -30,6 +32,7 @@ function Header() {
 
   function handleClick() {
     setHamburgerMenuIsOpen((open) => !open);
+    dispatch({ type: "setMailStatus", payload: { type: "mailto" } });
   }
 
   return (
@@ -85,9 +88,7 @@ function Header() {
         </div>
         <div className="ml-auto flex h-full items-center text-lg text-grey [&_button:hover]:text-off-white [&_button]:duration-300 ">
           <span className="mr-6 mt-[1px] flex items-center text-sm text-off-white [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:transition-colors [&_a]:duration-200">
-            <NavLink to="contact" onClick={() => handleClick()}>
-              Contact
-            </NavLink>
+            <NavLink to="contact">Contact</NavLink>
           </span>
           <button
             className="cursor-not-allowed"
