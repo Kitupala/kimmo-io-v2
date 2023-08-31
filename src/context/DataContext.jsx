@@ -9,6 +9,7 @@ const initialState = {
   abilities: [...data.abilities],
   projectIsVisible: true,
   projectTab: "0.1",
+  mailStatus: { type: "mailto" },
 };
 
 function reducer(state, action) {
@@ -20,6 +21,12 @@ function reducer(state, action) {
         projectTab: action.payload,
       };
 
+    case "setMailStatus":
+      return {
+        ...state,
+        mailStatus: action.payload,
+      };
+
     default:
       throw new Error("Unknown error");
   }
@@ -27,7 +34,7 @@ function reducer(state, action) {
 
 function DataProvider({ children }) {
   const [
-    { projects, projectIsVisible, projectTab, studies, abilities },
+    { projects, projectIsVisible, projectTab, studies, abilities, mailStatus },
     dispatch,
   ] = useReducer(reducer, initialState);
 
@@ -39,6 +46,7 @@ function DataProvider({ children }) {
         projectTab,
         studies,
         abilities,
+        mailStatus,
         dispatch,
       }}
     >
