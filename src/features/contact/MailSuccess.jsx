@@ -7,9 +7,9 @@ function MailSuccess() {
 
   return (
     <div className="flex min-h-[calc(100vh-365px)] animate-fade-in flex-col items-center justify-center opacity-0">
-      <ThumbsUp className="mb-4 h-40 w-40 fill-grey" />
+      <ThumbsUp className="mb-4 h-20 w-20 fill-grey sm:h-40 sm:w-40" />
       <p className=" mb-4 text-center text-xl text-primary-text">
-        Thanks for reaching out!
+        Thank you for reaching out!
       </p>
       <p className="mb-24 text-center text-md text-primary-text">
         Your message just showed up in my inbox. Talk to you soon!
