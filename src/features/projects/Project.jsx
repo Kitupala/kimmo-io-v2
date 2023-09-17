@@ -1,7 +1,10 @@
+import classNames from "classnames";
+import { useDarkMode } from "../../context/DarkModeContext";
 import IconLink from "../../ui/IconLink";
 import TechPill from "../../ui/TechPill";
 
 function Project({ project }) {
+  const { isDarkMode } = useDarkMode();
   const links = project.link;
 
   return (
@@ -10,26 +13,26 @@ function Project({ project }) {
       md:pl-[4rem]"
     >
       {/* Project description */}
-      <div className="col-span-12 col-end-12 row-span-full flex h-full flex-col self-center rounded-md border border-transparent-white-primary bg-background/20 px-6 py-2 custom-bp-sm:bg-background/80 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
+      <div className="col-span-12 col-end-12 row-span-full flex h-full flex-col self-center rounded-md border border-transparent-sm bg-background/20 px-6 py-2 custom-bp-sm:bg-background/80 md:col-span-6 md:col-start-1 md:border-0 md:bg-transparent md:p-0">
         <h3
           className="text-xl text-primary-text sm:text-2xl 
           "
         >
-          <span className="text-xxs uppercase tracking-widest text-grey">
+          <span className="text-xxs uppercase tracking-widest text-muted-text">
             Project
           </span>
           <br />
           {project.title}
         </h3>
-        <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border md:border-transparent-white-primary md:bg-background/70 md:px-5 md:py-4 md:shadow-2xl">
+        <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border-2 md:border-transparent-sm md:bg-background/80 md:px-5 md:pb-5 md:pt-4 md:shadow-lg">
           {project.id === "0.7" && (
-            <span className="text-sm text-grey">Update 31/8</span>
+            <span className="text-sm text-muted-text">Update 31/8</span>
           )}
           <p className="text-md">{project.description}</p>
         </div>
 
         {/* Project links */}
-        <div className="z-20 row-span-full flex space-x-4 pb-4 pt-6 text-2xl text-grey md:col-span-6 md:col-start-1 [&_a:hover]:text-off-white [&_a]:duration-300">
+        <div className="z-20 row-span-full flex space-x-4 pb-4 pt-6 text-2xl text-muted-text md:col-span-6 md:col-start-1 [&_a:hover]:text-highlight-text [&_a]:duration-300">
           {links?.map((link) => (
             <IconLink
               label={link.at(0).linkData.label}
@@ -43,9 +46,12 @@ function Project({ project }) {
 
       {/* Project image */}
       <div className="-z-20 col-span-12 col-end-12 row-span-full flex items-center md:col-span-7 md:col-end-12">
-        <div className="overflow-hidden rounded-md border border-transparent-white-primary">
+        <div className="overflow-hidden rounded-md border-2 border-transparent-sm md:shadow-lg ">
           <img
-            className="-z-30 hidden min-h-full object-cover opacity-60 custom-bp-sm:block md:object-contain"
+            className={classNames(
+              "-z-30 hidden min-h-full object-cover opacity-80 custom-bp-sm:block md:object-contain",
+              isDarkMode && "opacity-60",
+            )}
             src={project.image}
             alt={`Image of ${project.title} app`}
           />
@@ -55,7 +61,7 @@ function Project({ project }) {
       {/* Project technologies */}
       <div className="col-span-12 col-end-12 flex flex-col md:z-0 md:row-span-full md:items-end md:justify-end md:pt-2">
         <ul
-          className="mt-1 flex flex-wrap [&_li]:mr-1.5 last:[&_li]:mr-0"
+          className="mt-1 flex flex-wrap opacity-75 [&_li]:mr-1.5 last:[&_li]:mr-0"
           aria-label="Technologies used"
         >
           {project.tech.map((tech) => (
