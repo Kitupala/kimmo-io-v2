@@ -4,14 +4,16 @@ import classNames from "classnames";
 
 import Container from "./Container";
 import Logo from "./Logo";
-import LogoIcon from "./LogoIcon";
 import HamburgerIcon from "./HamburgerIcon";
-import { LuLightbulb } from "react-icons/lu";
+import DarkModeToggle from "./DarkModeToggle";
+
 import { useData } from "../context/DataContext";
+import { useDarkMode } from "../context/DarkModeContext";
 
 function Header() {
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
   const { dispatch } = useData();
+  const { isDarkMode } = useDarkMode();
 
   useEffect(() => {
     const html = document.querySelector("html");
@@ -31,36 +33,48 @@ function Header() {
   }, [setHamburgerMenuIsOpen]);
 
   function handleClick() {
-    setHamburgerMenuIsOpen((open) => !open);
+    hamburgerMenuIsOpen && setHamburgerMenuIsOpen(false);
     dispatch({ type: "setMailStatus", payload: { type: "mailto" } });
   }
 
   return (
-    <header className="fixed left-0 top-0 z-30 w-full saturate-100 backdrop-blur-[30px]">
-      <Container className="flex h-navigation-height border-b border-transparent-white-primary">
-        <div className="flex items-center text-md">
-          <LogoIcon className="mr-1 h-5 w-5 fill-off-white" />
-          <Logo className="mr-8 h-4 fill-off-white" />
+    <header className="fixed left-0 top-0 z-30 w-full">
+      <Container
+        className={classNames(
+          "flex h-navigation-height border-b border-transparent-sm  saturate-100 backdrop-blur-[30px]",
+          isDarkMode ? "border-transparent-sm" : "!border-grey/10",
+        )}
+      >
+        <div className="mr-6">
+          <Logo />
         </div>
 
         <div
           className={classNames(
-            "cbp-header:visible transition-[visibility]",
+            "transition-[visibility] cbp-header:visible",
             hamburgerMenuIsOpen ? "visible" : "invisible delay-500",
           )}
         >
           <nav
             className={classNames(
-              "cbp-header:relative cbp-header:top-0 cbp-header:block cbp-header:h-auto cbp-header:w-auto cbp-header:translate-x-0 cbp-header:overflow-hidden cbp-header:bg-transparent cbp-header:opacity-100 cbp-header:transition-none fixed left-0 top-navigation-height h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity duration-500",
+              "fixed left-0 top-navigation-height h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto transition-opacity duration-500 cbp-header:relative cbp-header:top-0 cbp-header:block cbp-header:h-auto cbp-header:w-auto cbp-header:translate-x-0 cbp-header:overflow-hidden cbp-header:bg-transparent cbp-header:opacity-100 cbp-header:transition-none",
+
               hamburgerMenuIsOpen
-                ? "translate-x-0 opacity-100"
+                ? `translate-x-0 opacity-100 ${
+                    isDarkMode
+                      ? "bg-background"
+                      : "bg-gradient-to-br from-sky-300 from-15% to-sky-200"
+                  }`
                 : "translate-x-[-100vw] opacity-0",
             )}
           >
             <ul
               className={classNames(
-                "cbp-header:flex-row cbp-header:items-center cbp-header:[&_a]:translate-y-0 cbp-header:[&_a]:text-sm cbp-header:[&_a]:transition-colors cbp-header:[&_li]:border-none flex h-full flex-col ease-in [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[colors,transform] [&_a]:duration-500 [&_li]:ml-6 [&_li]:mr-6 [&_li]:border-b [&_li]:border-grey-dark",
+                "flex h-full flex-col text-highlight-text ease-in cbp-header:flex-row cbp-header:items-center [&_.active]:pointer-events-none [&_.active]:text-muted-text [&_a:hover]:text-muted-text [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[colors,transform] [&_a]:duration-500 cbp-header:[&_a]:translate-y-0 cbp-header:[&_a]:text-sm cbp-header:[&_a]:transition-colors [&_li]:ml-6 [&_li]:mr-6 [&_li]:border-b cbp-header:[&_li]:border-none",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-[0]",
+                isDarkMode
+                  ? " [&_li]:border-grey-dark"
+                  : "[&_li]:border-transparent-md",
               )}
             >
               <li>
@@ -86,24 +100,19 @@ function Header() {
             </ul>
           </nav>
         </div>
-        <div className="ml-auto flex h-full items-center text-lg text-grey [&_button:hover]:text-off-white [&_button]:duration-300 ">
-          <span className="mr-6 mt-[1px] flex items-center text-sm text-off-white [&_.active]:pointer-events-none [&_.active]:text-grey [&_a:hover]:text-grey [&_a]:transition-colors [&_a]:duration-200">
+        <div className="ml-auto flex h-full items-center text-lg text-primary-text">
+          <span className="mr-6 mt-[1px] flex items-center text-sm text-highlight-text [&_.active]:pointer-events-none [&_.active]:text-muted-text [&_a:hover]:text-muted-text [&_a]:transition-colors [&_a]:duration-200">
             <NavLink to="contact">Contact</NavLink>
           </span>
-          <button
-            className="cursor-not-allowed"
-            aria-label="Light/Dark mode toggle"
-          >
-            <LuLightbulb />
-          </button>
+          <DarkModeToggle />
         </div>
 
         <button
-          className="cbp-header:hidden ml-6"
+          className="ml-6 cbp-header:hidden"
           onClick={() => setHamburgerMenuIsOpen((open) => !open)}
         >
           <span className="sr-only">Toggle menu</span>
-          <HamburgerIcon />
+          <HamburgerIcon isDarkMode={isDarkMode} />
         </button>
       </Container>
     </header>
