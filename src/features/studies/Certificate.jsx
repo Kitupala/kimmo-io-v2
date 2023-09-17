@@ -1,6 +1,6 @@
 function Certificate({ cert }) {
   return (
-    <div className="animate-fade-in">
+    <div>
       <img src={cert} />
     </div>
   );
