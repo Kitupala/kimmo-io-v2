@@ -6,6 +6,7 @@ import Projects from "./features/projects/Projects";
 import Studies from "./features/studies/Studies";
 import Abilities from "./features/abilities/Abilities";
 import Contact from "./features/contact/Contact";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <DarkModeProvider>
+      <RouterProvider router={router} />
+    </DarkModeProvider>
+  );
 }
 
 export default App;
