@@ -1,13 +1,15 @@
 import emailjs from "@emailjs/browser";
+import classNames from "classnames";
 import { useRef, useState } from "react";
 import { useData } from "../../context/DataContext";
+import { useDarkMode } from "../../context/DarkModeContext";
 import { ClipLoader } from "react-spinners";
-import classNames from "classnames";
 import { useNavigate } from "react-router-dom";
 
 function ContactForm() {
   const form = useRef();
   const { dispatch } = useData();
+  const { isDarkMode } = useDarkMode();
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -54,11 +56,11 @@ function ContactForm() {
         data-testid="loader"
       />
 
-      <div className="max-w-3xl animate-fade-translate-in rounded-md border border-transparent-white-primary bg-background/20 p-4 opacity-0 [--animation-delay:400ms] md:mt-16 md:p-8">
+      <div className="max-w-3xl animate-fade-translate-in rounded-md border border-transparent-sm bg-background/20 p-4 opacity-0 [--animation-delay:400ms] md:mt-16 md:p-8">
         <div
           className={isLoading && "opacity-30 transition-opacity duration-500"}
         >
-          <span className="text-xxs uppercase tracking-widest text-grey">
+          <span className="text-xxs uppercase tracking-widest text-muted-text">
             Send message
           </span>
           <p className="mt-3 text-sm text-primary-text sm:text-md">
@@ -81,12 +83,21 @@ function ContactForm() {
                 name="userName"
                 disabled={isLoading}
                 required
-                className="peer block w-full appearance-none rounded-lg border border-transparent-white-secondary bg-transparent px-[1rem] pb-2.5 pt-4 capitalize focus:border-indigo-900 focus:outline-none focus:ring-0"
+                className={classNames(
+                  "peer block w-full appearance-none rounded-lg border bg-transparent px-[1rem] pb-2.5 pt-4 capitalize focus:outline-none focus:ring-0",
+                  isDarkMode &&
+                    "border-transparent-md  focus:border-indigo-900",
+                  !isDarkMode && "border-sky-200 focus:border-sky-300",
+                )}
                 placeholder=" "
               />
               <label
                 htmlFor="name"
-                className="absolute left-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform rounded-full bg-background/50 px-2 text-sm text-grey duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:rounded-full peer-focus:bg-background/70 peer-focus:px-2 peer-focus:text-grey"
+                className={classNames(
+                  "absolute left-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform rounded-full px-2 text-sm text-muted-text duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:rounded-full peer-focus:px-2 peer-focus:text-muted-text",
+                  isDarkMode && "bg-background/50 peer-focus:bg-background",
+                  !isDarkMode && "bg-[#c9f4f4] peer-focus:bg-[#c9f4f4]",
+                )}
               >
                 Name
               </label>
@@ -100,12 +111,21 @@ function ContactForm() {
                 name="userEmail"
                 disabled={isLoading}
                 required
-                className="peer block w-full appearance-none rounded-lg border border-transparent-white-secondary !bg-transparent px-[1rem] pb-2.5 pt-4 focus:border-indigo-900 focus:outline-none focus:ring-0"
+                className={classNames(
+                  "peer block w-full appearance-none rounded-lg border !bg-transparent px-[1rem] pb-2.5 pt-4 focus:outline-none focus:ring-0",
+                  isDarkMode &&
+                    "border-transparent-md  focus:border-indigo-900",
+                  !isDarkMode && "border-sky-200 focus:border-sky-300",
+                )}
                 placeholder=" "
               />
               <label
                 htmlFor="email"
-                className="absolute left-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform rounded-full bg-background/50 px-2 text-sm text-grey duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:rounded-full peer-focus:bg-background/70 peer-focus:px-2 peer-focus:text-grey"
+                className={classNames(
+                  "absolute left-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform rounded-full px-2 text-sm text-muted-text duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:rounded-full  peer-focus:px-2 peer-focus:text-muted-text",
+                  isDarkMode && "bg-background/50 peer-focus:bg-background",
+                  !isDarkMode && "bg-[#c9f4f4] peer-focus:bg-[#c9f4f4]",
+                )}
               >
                 Email
               </label>
@@ -118,12 +138,21 @@ function ContactForm() {
                 name="message"
                 disabled={isLoading}
                 required
-                className="peer block w-full appearance-none rounded-lg border border-transparent-white-secondary bg-transparent px-[1rem] pb-2.5 pt-4 focus:border-indigo-900 focus:outline-none focus:ring-0"
+                className={classNames(
+                  "peer block w-full appearance-none rounded-lg border bg-transparent px-[1rem] pb-2.5 pt-4 focus:outline-none focus:ring-0",
+                  isDarkMode &&
+                    "border-transparent-md  focus:border-indigo-900",
+                  !isDarkMode && "border-sky-200 focus:border-sky-300",
+                )}
                 placeholder=" "
               />
               <label
                 htmlFor="message"
-                className="absolute left-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform rounded-full bg-background/50 px-2 text-sm text-grey duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:rounded-full peer-focus:bg-background/70 peer-focus:px-2 peer-focus:text-grey"
+                className={classNames(
+                  "absolute left-1 top-2 z-10 origin-[0] -translate-y-4 scale-75 transform rounded-full px-2 text-sm text-muted-text duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:rounded-full  peer-focus:px-2 peer-focus:text-muted-text",
+                  isDarkMode && "bg-background/50 peer-focus:bg-background",
+                  !isDarkMode && "bg-[#cef5f5] peer-focus:bg-[#cef5f5]",
+                )}
               >
                 Your message
               </label>
@@ -132,8 +161,12 @@ function ContactForm() {
             <div className="mt-4 flex justify-center gap-4">
               <button
                 className={classNames(
-                  "max-w-max cursor-pointer self-center rounded-md border border-transparent-white-secondary px-6 py-3 text-sm text-grey transition-all duration-200 hover:border-indigo-900 hover:bg-page-gradient hover:text-indigo-300",
+                  "max-w-max cursor-pointer self-center rounded-md border px-6 py-3 text-sm text-muted-text transition-all duration-200 ",
                   isLoading && "invisible",
+                  isDarkMode &&
+                    "border-transparent-md hover:border-indigo-900 hover:bg-page-gradient hover:text-indigo-300",
+                  !isDarkMode &&
+                    "border-sky-200 hover:border-sky-300 hover:text-highlight-text",
                 )}
                 onClick={() => navigate("/")}
               >
@@ -141,8 +174,12 @@ function ContactForm() {
               </button>
               <input
                 className={classNames(
-                  "max-w-max cursor-pointer self-center rounded-md border border-transparent-white-secondary px-6 py-3 text-sm transition-all duration-200 hover:border-indigo-900 hover:bg-page-gradient hover:text-indigo-300",
+                  "max-w-max cursor-pointer self-center rounded-md border border-transparent-md px-6 py-3 text-sm transition-all duration-200",
                   isLoading && "invisible",
+                  isDarkMode &&
+                    "hover:border-indigo-900 hover:bg-page-gradient hover:text-indigo-300",
+                  !isDarkMode &&
+                    "border-sky-200 hover:border-sky-300 hover:text-highlight-text",
                 )}
                 type="submit"
                 value="Send Message"
