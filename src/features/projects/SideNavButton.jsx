@@ -21,10 +21,9 @@ function SideNavButton({ id, title, index }) {
     >
       <button
         className={classNames(
-          "z-50 flex h-11 w-full items-center md:border-l-2",
-          projectTab === id
-            ? "pointer-events-none border-l-slate-50/50 text-grey"
-            : "border-l-transparent-white-primary text-off-white",
+          "md:border-l-sidenav-border md:hover:border-l-sidenav-bg md:hover:bg-sidenav-border relative z-50 flex h-11 w-full items-center text-highlight-text transition-colors duration-200 md:border-l-2",
+          projectTab === id &&
+            "md:!border-l-sidenav-bg pointer-events-none text-muted-text",
         )}
         id={id}
         onClick={handleClick}
