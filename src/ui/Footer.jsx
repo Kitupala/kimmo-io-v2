@@ -1,17 +1,26 @@
+import classNames from "classnames";
 import Container from "./Container";
+
 import Logo from "./Logo";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { useDarkMode } from "../context/DarkModeContext";
 
 function Footer() {
+  const { isDarkMode } = useDarkMode();
   return (
     <footer className="mt-32 text-sm">
-      <Container className="flex flex-col justify-between border-t border-transparent-white-primary py-14 sm:flex-row">
+      <Container
+        className={classNames(
+          "flex flex-col justify-between border-t py-14 sm:flex-row",
+          isDarkMode ? "border-transparent-sm" : "border-grey/10",
+        )}
+      >
         <div>
           <div className="flex h-full flex-row justify-between sm:flex-col">
-            <div className="flex items-center self-start">
-              <Logo className="mr-4 h-4 fill-off-white" />
+            <div className="-ml-2 -mt-2 flex items-center">
+              <Logo className="mr-4 h-4" />
             </div>
-            <div className="flex items-center space-x-4 text-lg text-grey [&_a:hover]:text-off-white [&_a]:duration-300 hover:[&_a]:-translate-y-0.5">
+            <div className="flex items-center space-x-4 text-lg text-[#0072b1] [&_a:hover]:text-[#0073b1d3] [&_a]:duration-300 hover:[&_a]:-translate-y-0.5">
               <a
                 href="https://linkedin.com/in/kimmotuupanen"
                 target="_blank"
@@ -34,13 +43,13 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-10 flex max-w-md text-xxs text-grey sm:mt-0 sm:text-xs">
+        <div className="mt-10 flex max-w-md text-xxs text-muted-text sm:mt-0 sm:text-xs">
           <p>
             Handcrafted in{" "}
             <span>
               <a
                 href="https://code.visualstudio.com/"
-                className="font-medium text-slate-400 hover:text-slate-300"
+                className="font-medium text-footer-link hover:text-footer-link-hover"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -51,7 +60,7 @@ function Footer() {
             <span>
               <a
                 href="https://react.dev/"
-                className="font-medium text-slate-400 hover:text-slate-300"
+                className="font-medium text-footer-link hover:text-footer-link-hover"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -62,7 +71,7 @@ function Footer() {
             <span>
               <a
                 href="https://tailwindcss.com/"
-                className="font-medium text-slate-400 hover:text-slate-300"
+                className="font-medium text-footer-link hover:text-footer-link-hover"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -73,7 +82,7 @@ function Footer() {
             <span>
               <a
                 href="https://app.netlify.com/"
-                className="font-medium text-slate-400 hover:text-slate-300"
+                className="font-medium text-footer-link hover:text-footer-link-hover"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -84,7 +93,7 @@ function Footer() {
             <span>
               <a
                 href="https://https://fonts.google.com/specimen/Titillium+Web.com/"
-                className="font-medium text-slate-400 hover:text-slate-300"
+                className="font-medium text-footer-link hover:text-footer-link-hover"
                 target="_blank"
                 rel="noreferrer"
               >
