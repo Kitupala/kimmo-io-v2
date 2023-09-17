@@ -4,14 +4,16 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import TechPill from "../../ui/TechPill";
 import Certificate from "./Certificate";
 import Modal from "../../ui/Modal";
+import { useDarkMode } from "../../context/DarkModeContext";
+import classNames from "classnames";
 
 function Course({ course }) {
+  const { isDarkMode } = useDarkMode();
+
   return (
     <li className="mb-20 last:mb-0">
       <div className="group relative grid pb-1 transition-all sm:grid-cols-9 sm:gap-8 md:gap-2 lg:hover:!opacity-100 lg:group-hover/list:opacity-60">
-        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-background/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-
-        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-grey sm:col-span-3">
+        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-text sm:col-span-3">
           {course.started} &mdash; {course.completed}
         </header>
 
@@ -19,7 +21,13 @@ function Course({ course }) {
           <h3 className="font-medium leading-snug text-primary-text">
             <div>
               <a
-                className="group/link inline-flex items-baseline text-lg font-medium leading-tight text-primary-text hover:text-indigo-300 focus-visible:text-indigo-300"
+                className={classNames(
+                  "group/link inline-flex items-baseline text-lg font-medium leading-tight text-primary-text",
+                  isDarkMode &&
+                    "hover:text-indigo-300 focus-visible:text-indigo-300",
+                  !isDarkMode &&
+                    " hover:text-sky-500 focus-visible:text-sky-500",
+                )}
                 href={course.link}
                 target="_blank"
                 rel="noreferrer"
@@ -37,14 +45,22 @@ function Course({ course }) {
               </a>
             </div>
           </h3>
-          <p className="custom-bp-xs:mb-0 my-2 text-sm leading-normal text-grey">
+          <p className="my-2 text-sm leading-normal text-muted-text custom-bp-xs:mb-0">
             {course.description}
           </p>
-          <ul className="custom-bp-xs:block mb-4 mt-2 flex hidden flex-wrap">
+          <ul className="mb-4 mt-2 flex hidden flex-wrap custom-bp-xs:block">
             <li className="mr-4">
               <Modal>
                 <Modal.Open opens="cert">
-                  <button className="relative mt-2 inline-flex items-center text-sm text-off-white hover:text-indigo-300 focus-visible:text-indigo-300">
+                  <button
+                    className={classNames(
+                      "relative mt-2 inline-flex items-center text-sm text-highlight-text",
+                      isDarkMode &&
+                        "hover:text-indigo-300 focus-visible:text-indigo-300",
+                      !isDarkMode &&
+                        " hover:text-sky-500 focus-visible:text-sky-500",
+                    )}
+                  >
                     Certificate
                     <span className="ml-1">
                       <AiOutlineSafetyCertificate />
@@ -57,7 +73,7 @@ function Course({ course }) {
               </Modal>
             </li>
           </ul>
-          <ul className="flex flex-wrap">
+          <ul className="flex flex-wrap gap-1 opacity-75">
             {course.tech.map((tech) => (
               <TechPill value={tech} key={tech} />
             ))}
