@@ -185,7 +185,7 @@ export const data = {
       id: "0.7",
       title: "kimmo.io v2.1",
       description:
-        "New site is almost finished! Some TLC and refactoring needed here and there. Today I added contact form using EmailJS. Planning the next step which might be light mode...",
+        "New site is almost finished! Some TLC and refactoring needed here and there. I've been working with light/dark mode toggle and today I released new lightish theme for the site.",
       tech: ["HTML", "CSS", "JavaScript", "React"],
       link: [
         [
