@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,7 @@
       name="description"
       content="Hi, I'm Kimmo! Web designer and developer with a great passion for learning how to build things with code."
     />
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -36,6 +37,13 @@
       href="https://fonts.googleapis.com/css2?family=Comforter&display=swap"
       rel="stylesheet"
     />
+    <!-- Cute Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -48,8 +56,10 @@
 
     <title>KT &lowast; Portfolio</title>
   </head>
-  <body>
+  <body id="body">
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/hooks/transitionAfterPageLoad.js"></script>
   </body>
 </html>
