@@ -103,7 +103,7 @@ function Footer() {
             typeface.
             <br />
             <span className="mb-[-4px] flex items-center pt-2 text-xxs">
-              2023&thinsp;
+              2024&thinsp;
               <span className="text-xs font-extralight">Ⓒ</span>
               &thinsp;Kitupala | All Rights Reserved
             </span>
