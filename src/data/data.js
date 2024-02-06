@@ -234,7 +234,31 @@ export const data = {
 
   studies: [
     {
-      id: "1.1",
+      id: "1.9",
+      title: "Advanced React: Design System, Design Patterns, Performance",
+      description:
+        "Become Senior in React JS by Gaining in-depth expertise in Design Systems, Design Patterns, Performance, TypeScript etc.",
+      tech: ["JavaScript", "TypeScript", "React"],
+      platform: "Udemy",
+      link: "https://www.udemy.com/course/advanced-react/",
+      length: "22.5 total hours",
+      started: "Dec 2023",
+      completed: "",
+    },
+    {
+      id: "1.8",
+      title: "Microsoft Practical AI",
+      description:
+        "Learn about artificial intelligence in a clear, practical way. The course covers the basic AI principles and terminology while acquainting you with generative AI. You'll even learn to use language and image models.",
+      tech: ["Artificial Intelligence"],
+      platform: "Edukamu",
+      link: "https://cs.edukamu.fi/practical-ai",
+      length: "2 ECTS",
+      started: "Nov",
+      completed: "Nov 2023",
+    },
+    {
+      id: "1.7",
       title: "The Ultimate React Course 2023: React, Redux & More",
       description:
         "Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns.",
@@ -247,7 +271,7 @@ export const data = {
       certificate: "/images/urc-cert.jpeg",
     },
     {
-      id: "1.2",
+      id: "1.6",
       title: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
       description:
         "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.",
@@ -260,7 +284,7 @@ export const data = {
       certificate: "/images/sass-cert.jpg",
     },
     {
-      id: "1.3",
+      id: "1.5",
       title: "Complete Web & Mobile Designer in 2023: UI/UX, Figma + more",
       description:
         "Become a Designer in 2023! Master mobile and web design, User Interface + User Experience (UI/UX Design), HTML and CSS.",
@@ -286,7 +310,7 @@ export const data = {
       certificate: "/images/css-cert.jpg",
     },
     {
-      id: "1.5",
+      id: "1.3",
       title: "Crash Course: Build a Full-Stack Web App in a Weekend!",
       description:
         "A quick, fun, and hands-on introduction to web development. Build a complete app with HTML, CSS, JavaScript, and React!",
@@ -299,7 +323,7 @@ export const data = {
       certificate: "/images/tid-cert.jpg",
     },
     {
-      id: "1.6",
+      id: "1.2",
       title: "The Complete JavaScript Course 2023: From Zero to Expert!",
       description:
         "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
@@ -312,14 +336,14 @@ export const data = {
       certificate: "/images/js-cert.jpg",
     },
     {
-      id: "1.7",
+      id: "1.1",
       title: "Programming Fundamentals - AMKoodari",
       description:
         "AMKoodari is a training programme for everyone who would like to study a new profession, update their existing skill sets, change careers or otherwise learn new skills through their innate creativity.",
       tech: ["HTML", "CSS", "JavaScript"],
       platform: "XAMK",
       link: "https://amkoodari.fi/en?gclid=CjwKCAjwtfqKBhBoEiwAZuesiBOLeINMi9P8-m0iWoYfI8pC5vpO0dI_6_l1WwdGSUvy7CAKUEsHtRoCNVAQAvD_BwE",
-      length: "7 credits",
+      length: "7 ECTS",
       started: "Aug",
       completed: "Dec 2020",
       certificate: "/images/xamk-cert.png",

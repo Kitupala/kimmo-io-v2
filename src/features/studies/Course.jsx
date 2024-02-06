@@ -52,20 +52,24 @@ function Course({ course }) {
             <li className="mr-4">
               <Modal>
                 <Modal.Open opens="cert">
-                  <button
-                    className={classNames(
-                      "relative mt-2 inline-flex items-center text-sm text-highlight-text",
-                      isDarkMode &&
-                        "hover:text-indigo-300 focus-visible:text-indigo-300",
-                      !isDarkMode &&
-                        " hover:text-sky-500 focus-visible:text-sky-500",
-                    )}
-                  >
-                    Certificate
-                    <span className="ml-1">
-                      <AiOutlineSafetyCertificate />
-                    </span>
-                  </button>
+                  {course.certificate ? (
+                    <button
+                      className={classNames(
+                        "relative mt-2 inline-flex items-center text-sm text-highlight-text",
+                        isDarkMode &&
+                          "hover:text-indigo-300 focus-visible:text-indigo-300",
+                        !isDarkMode &&
+                          " hover:text-sky-500 focus-visible:text-sky-500",
+                      )}
+                    >
+                      Certificate
+                      <span className="ml-1">
+                        <AiOutlineSafetyCertificate />
+                      </span>
+                    </button>
+                  ) : (
+                    <button className="hidden"></button>
+                  )}
                 </Modal.Open>
                 <Modal.Window name="cert">
                   <Certificate cert={course.certificate} />
