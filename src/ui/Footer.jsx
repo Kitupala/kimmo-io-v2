@@ -7,6 +7,8 @@ import { useDarkMode } from "../context/DarkModeContext";
 
 function Footer() {
   const { isDarkMode } = useDarkMode();
+  const year = new Date().getFullYear();
+
   return (
     <footer className="mt-32 text-sm">
       <Container
@@ -103,7 +105,7 @@ function Footer() {
             typeface.
             <br />
             <span className="mb-[-4px] flex items-center pt-2 text-xxs">
-              2024&thinsp;
+              {year}&thinsp;
               <span className="text-xs font-extralight">Ⓒ</span>
               &thinsp;Kitupala | All Rights Reserved
             </span>
