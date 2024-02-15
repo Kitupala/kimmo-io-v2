@@ -6,6 +6,7 @@ function SkillBar({ title, grade, index }) {
   const { isDarkMode } = useDarkMode();
 
   const widthVariants = {
+    25: "[--width:25%]",
     40: "[--width:40%]",
     50: "[--width:50%]",
     60: "[--width:60%]",
