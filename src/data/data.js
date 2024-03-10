@@ -370,7 +370,7 @@ export const data = {
         { id: "2.2", title: "CSS3", grade: 85 },
         { id: "2.3", title: "Tailwind CSS", grade: 75 },
         { id: "2.4", title: "JavaScript", grade: 60 },
-        { id: "2.5", title: "TypeScript", grade: 25 },
+        { id: "2.5", title: "TypeScript", grade: 40 },
         { id: "2.6", title: "React", grade: 50 },
         { id: "2.7", title: "GitHub", grade: 50 },
         { id: "2.8", title: "Figma", grade: 40 },
