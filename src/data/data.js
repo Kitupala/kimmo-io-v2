@@ -234,10 +234,23 @@ export const data = {
 
   studies: [
     {
+      id: "2.0",
+      title: "Mastering TypeScript - 2024 Edition",
+      description:
+        "Learn the world's fastest growing programming language from scratch. Includes Webpack & React!",
+      tech: ["JavaScript", "TypeScript", "React"],
+      platform: "Udemy",
+      link: "https://www.udemy.com/course/learn-typescript/",
+      length: "11 total hours",
+      started: "Feb",
+      completed: "Mar 2024",
+      certificate: "/images/ts-cert.jpeg",
+    },
+    {
       id: "1.9",
       title: "Advanced React: Design System, Design Patterns, Performance",
       description:
-        "Become Senior in React JS by Gaining in-depth expertise in Design Systems, Design Patterns, Performance, TypeScript etc.",
+        "Become senior in React JS by gaining in-depth expertise in design systems, design patterns, performance, TypeScript etc.",
       tech: ["JavaScript", "TypeScript", "React"],
       platform: "Udemy",
       link: "https://www.udemy.com/course/advanced-react/",
