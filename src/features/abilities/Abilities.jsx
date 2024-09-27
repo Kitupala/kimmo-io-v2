@@ -22,7 +22,7 @@ function Abilities() {
             {description}
           </p>
 
-          <div className="mt-8 flex hidden animate-fade-translate-in opacity-0 [--animation-delay:500ms] md:col-end-2 md:row-start-1  md:mr-12 md:mt-0 md:block">
+          <div className="mt-8 hidden animate-fade-translate-in opacity-0 [--animation-delay:500ms] sm:flex md:col-end-2 md:row-start-1  md:mr-12 md:mt-0 md:block">
             <ul className="flex flex-wrap justify-center gap-3 md:justify-start">
               {softSkills.map((skill) => (
                 <RosterItem skill={skill} key={skill} />

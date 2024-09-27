@@ -25,9 +25,9 @@ function Project({ project }) {
           {project.title}
         </h3>
         <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border-2 md:border-transparent-sm md:bg-background/80 md:px-5 md:pb-5 md:pt-4 md:shadow-lg">
-          {project.id === "0.7" && (
+          {/* {project.id === "0.7" && (
             <span className="text-sm text-muted-text">Update 17/9</span>
-          )}
+          )} */}
           <p className="text-md">{project.description}</p>
         </div>
 

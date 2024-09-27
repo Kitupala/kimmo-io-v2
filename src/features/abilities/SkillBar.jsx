@@ -7,6 +7,7 @@ function SkillBar({ title, grade, index }) {
 
   const widthVariants = {
     25: "[--width:25%]",
+    35: "[--width:35%]",
     40: "[--width:40%]",
     50: "[--width:50%]",
     60: "[--width:60%]",
