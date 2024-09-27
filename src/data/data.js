@@ -305,7 +305,7 @@ export const data = {
       title: "The Ultimate React Course 2024: React, Next.js, Redux & More",
       description:
         "Master modern React from beginner to advanced! Next.js, Context API, React Query, Redux, Tailwind, advanced patterns.",
-      tech: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+      tech: ["Tailwind CSS", "JavaScript", "React", "Next.js"],
       platform: "Udemy",
       link: "https://www.udemy.com/course/the-ultimate-react-course/",
       length: "84 total hours",
