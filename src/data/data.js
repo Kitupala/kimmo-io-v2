@@ -66,7 +66,7 @@ export const data = {
       title: "Fast React Pizza Co.",
       description:
         "React app for ordering pizzas. App uses React Router and Redux Toolkit. Styling implemented using Tailwind CSS framework.",
-      tech: ["HTML", "CSS", "JavaScript", "React"],
+      tech: ["Tailwind CSS", "JavaScript", "React"],
       link: [
         [
           {
@@ -91,34 +91,34 @@ export const data = {
     },
 
     // TODAY I LEARNED
-    {
-      id: "0.4",
-      title: "Today I Learned",
-      description:
-        "Small app for listing facts. Implemented with HTML, CSS, JavaScript, React and Supabase.",
-      tech: ["HTML", "CSS", "JavaScript", "React", "Supabase"],
-      link: [
-        [
-          {
-            linkData: {
-              label: "Github link",
-              href: "https://github.com/Kitupala/today-i-learned/",
-              icon: "SiGithub",
-            },
-          },
-        ],
-        [
-          {
-            linkData: {
-              label: "Netlify link",
-              href: "https://today-i-learned-kimmo.netlify.app/",
-              icon: "SiNetlify",
-            },
-          },
-        ],
-      ],
-      image: "/images/todayilearned.jpg",
-    },
+    // {
+    //   id: "0.4",
+    //   title: "Today I Learned",
+    //   description:
+    //     "Small app for listing facts. Build with JavaScript, React and Supabase.",
+    //   tech: ["CSS", "JavaScript", "React", "Supabase"],
+    //   link: [
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Github link",
+    //           href: "https://github.com/Kitupala/today-i-learned/",
+    //           icon: "SiGithub",
+    //         },
+    //       },
+    //     ],
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Netlify link",
+    //           href: "https://today-i-learned-kimmo.netlify.app/",
+    //           icon: "SiNetlify",
+    //         },
+    //       },
+    //     ],
+    //   ],
+    //   image: "/images/todayilearned.jpg",
+    // },
 
     // ADDRESSBOOK
     {
@@ -185,8 +185,8 @@ export const data = {
       id: "0.7",
       title: "kimmo.io v2.1",
       description:
-        "New site is almost finished! Some TLC and refactoring needed here and there. I've been working with light/dark mode toggle and today I released new lightish theme for the site.",
-      tech: ["HTML", "CSS", "JavaScript", "React"],
+        "My personal portfolio built with React and Tailwind CSS. Uses reducer and context for state management.",
+      tech: ["Tailwind CSS", "JavaScript", "React"],
       link: [
         [
           {
@@ -199,6 +199,36 @@ export const data = {
         ],
       ],
       image: "/images/kimmo-io-v2.png",
+    },
+
+    // THE WILD OASIS SITE
+    {
+      id: "0.8",
+      title: "The Wild Oasis site",
+      description:
+        "Website is designed for customers to reserve cabins at the fictional Wild Oasis rental company. Fullstack App with Next.js uses Supabase Open Source SQL Database. The authentication process is carried out using Auth.js.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+      link: [
+        [
+          {
+            linkData: {
+              label: "Github link",
+              href: "https://github.com/Kitupala/the-wild-oasis-website",
+              icon: "SiGithub",
+            },
+          },
+        ],
+        [
+          {
+            linkData: {
+              label: "Vercel link",
+              href: "https://the-wild-oasis-website-hazel.vercel.app/",
+              icon: "SiVercel",
+            },
+          },
+        ],
+      ],
+      image: "/images/two.jpg",
     },
 
     // kimmo.io v1.0
@@ -272,13 +302,13 @@ export const data = {
     },
     {
       id: "1.7",
-      title: "The Ultimate React Course 2023: React, Redux & More",
+      title: "The Ultimate React Course 2024: React, Next.js, Redux & More",
       description:
-        "Master modern React from beginner to advanced! Context API, React Query, Redux Toolkit, Tailwind, advanced patterns.",
-      tech: ["HTML", "CSS", "JavaScript", "React"],
+        "Master modern React from beginner to advanced! Next.js, Context API, React Query, Redux, Tailwind, advanced patterns.",
+      tech: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
       platform: "Udemy",
       link: "https://www.udemy.com/course/the-ultimate-react-course/",
-      length: "67 total hours",
+      length: "84 total hours",
       started: "June",
       completed: "Aug 2023",
       certificate: "/images/urc-cert.jpeg",
@@ -369,12 +399,13 @@ export const data = {
         { id: "2.1", title: "HTML5", grade: 75 },
         { id: "2.2", title: "CSS3", grade: 85 },
         { id: "2.3", title: "Tailwind CSS", grade: 75 },
-        { id: "2.4", title: "JavaScript", grade: 60 },
-        { id: "2.5", title: "TypeScript", grade: 40 },
-        { id: "2.6", title: "React", grade: 50 },
-        { id: "2.7", title: "GitHub", grade: 50 },
-        { id: "2.8", title: "Figma", grade: 40 },
-        // { id: "2.8", title: "Apple / macOS", grade: 85 },
+        { id: "2.4", title: "JavaScript", grade: 75 },
+        { id: "2.5", title: "TypeScript", grade: 60 },
+        { id: "2.6", title: "React", grade: 60 },
+        { id: "2.7", title: "Next.js", grade: 40 },
+        { id: "2.8", title: "Framer Motion", grade: 25 },
+        { id: "2.9", title: "Git", grade: 50 },
+        { id: "3.0", title: "Figma", grade: 40 },
       ],
       soft: [
         {
