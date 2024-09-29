@@ -156,7 +156,7 @@ export const data = {
       title: "The Wild Oasis",
       description:
         "The biggest and most advanced React project so far. Internal booking SPA for the hotel company. Including React Router, React Query, React Hook Form, Context Api and styled-components, hosted by Supabase.",
-      tech: ["HTML", "CSS", "JavaScript", "React", "Supabase"],
+      tech: ["styled-components", "JavaScript", "React", "Supabase"],
       link: [
         [
           {
