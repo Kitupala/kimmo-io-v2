@@ -8,7 +8,7 @@ const initialState = {
   studies: [...data.studies],
   abilities: [...data.abilities],
   projectIsVisible: true,
-  projectTab: "0.1",
+  projectTab: "initial",
   mailStatus: { type: "mailto" },
 };
 
