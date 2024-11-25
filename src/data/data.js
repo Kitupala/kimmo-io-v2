@@ -31,38 +31,38 @@ export const data = {
     },
 
     // FORKIFY
-    {
-      id: "0.2",
-      title: "Forkify",
-      description:
-        "Recipe application with API functionality. Built with vanilla JavaScript, HTML and CSS.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      link: [
-        [
-          {
-            linkData: {
-              label: "Github link",
-              href: "https://github.com/Kitupala/forkify/",
-              icon: "SiGithub",
-            },
-          },
-        ],
-        [
-          {
-            linkData: {
-              label: "Netlify link",
-              href: "https://forkify-kimmo.netlify.app/",
-              icon: "SiNetlify",
-            },
-          },
-        ],
-      ],
-      image: "/images/forkify.jpg",
-    },
+    // {
+    //   id: "0.2",
+    //   title: "Forkify",
+    //   description:
+    //     "Recipe application with API functionality. Built with vanilla JavaScript, HTML and CSS.",
+    //   tech: ["HTML", "CSS", "JavaScript"],
+    //   link: [
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Github link",
+    //           href: "https://github.com/Kitupala/forkify/",
+    //           icon: "SiGithub",
+    //         },
+    //       },
+    //     ],
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Netlify link",
+    //           href: "https://forkify-kimmo.netlify.app/",
+    //           icon: "SiNetlify",
+    //         },
+    //       },
+    //     ],
+    //   ],
+    //   image: "/images/forkify.jpg",
+    // },
 
     // FAST REACT PIZZA CO.
     {
-      id: "0.3",
+      id: "0.2",
       title: "Fast React Pizza Co.",
       description:
         "React app for ordering pizzas. App uses React Router and Redux Toolkit. Styling implemented using Tailwind CSS framework.",
@@ -122,11 +122,11 @@ export const data = {
 
     // ADDRESSBOOK
     {
-      id: "0.5",
+      id: "0.3",
       title: "AddressBook",
       description:
         "My own React practice project. User can basically add, search, sort, edit and delete contacts. App uses Context API for state management.",
-      tech: ["HTML", "CSS", "JavaScript", "React"],
+      tech: ["React", "JavaScript", "CSS" ],
       link: [
         [
           {
@@ -152,11 +152,11 @@ export const data = {
 
     // THE WILD OASIS
     {
-      id: "0.6",
+      id: "0.4",
       title: "The Wild Oasis",
       description:
-        "The biggest and most advanced React project so far. Internal booking SPA for the hotel company. Including React Router, React Query, React Hook Form, Context Api and styled-components, hosted by Supabase.",
-      tech: ["styled-components", "JavaScript", "React", "Supabase"],
+        "Internal booking SPA for the hotel company. Including React Router, React Query, React Hook Form, Context Api and styled-components, hosted by Supabase.",
+      tech: [ "React", "JavaScript", "Supabase", "styled-components"],
       link: [
         [
           {
@@ -182,11 +182,11 @@ export const data = {
 
     // KIMMO.IO V2.1
     {
-      id: "0.7",
+      id: "0.5",
       title: "kimmo.io v2.1",
       description:
         "My personal portfolio built with React and Tailwind CSS. Uses reducer and context for state management.",
-      tech: ["Tailwind CSS", "JavaScript", "React"],
+      tech: ["React", "JavaScript", "Tailwind CSS"],
       link: [
         [
           {
@@ -203,11 +203,11 @@ export const data = {
 
     // THE WILD OASIS SITE
     {
-      id: "0.8",
+      id: "0.6",
       title: "The Wild Oasis site",
       description:
         "Website is designed for customers to reserve cabins at the fictional Wild Oasis rental company. Fullstack App with Next.js uses Supabase Open Source SQL Database. The authentication process is carried out using Auth.js.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+      tech: ["Next.js", "Tailwind CSS", "Supabase", "TypeScript"],
       link: [
         [
           {
@@ -231,35 +231,65 @@ export const data = {
       image: "/images/two.jpg",
     },
 
-    // kimmo.io v1.0
-    // {
-    //   id: "0.8",
-    //   title: "kimmo.io v1.0",
-    //   description:
-    //     "Move along, there is nothing to see here!;) First version of this website from six months ago. Featured as a reference of my learning curve.",
-    //   tech: ["HTML", "CSS", "JavaScript"],
-    //   link: [
-    //     [
-    //       {
-    //         linkData: {
-    //           label: "Github link",
-    //           href: "https://github.com/Kitupala/kimmo-io/",
-    //           icon: "SiGithub",
-    //         },
-    //       },
-    //     ],
-    //     [
-    //       {
-    //         linkData: {
-    //           label: "Netlify link",
-    //           href: "https://kimmo-io.netlify.app/",
-    //           icon: "SiNetlify",
-    //         },
-    //       },
-    //     ],
-    //   ],
-    //   image: "/images/kimmoio.jpg",
-    // },
+    // STORE IT
+    {
+      id: "0.7",
+      title: "StoreIt",
+      description:
+        "A storage management and file sharing platform that lets users upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.",
+      tech: ["Next.js", "Appwrite", "Tailwind CSS", "ShadCN", "TypeScript"],
+      link: [
+        [
+          {
+            linkData: {
+              label: "Github link",
+              href: "https://github.com/Kitupala/store-it",
+              icon: "SiGithub",
+            },
+          },
+        ],
+        [
+          {
+            linkData: {
+              label: "Vercel link",
+              href: "https://store-it-inky-three.vercel.app/sign-in",
+              icon: "SiVercel",
+            },
+          },
+        ],
+      ],
+      image: "/images/store_it.png",
+    },
+
+    // FIZZI
+    {
+      id: "initial",
+      title: "Fizzi",
+      description:
+        "3D animated e-commerce landing page for the fictional soda brand.",
+      tech: ["Next.js", "Prismic", "Three.js", "Tailwind CSS", "GSAP", "TypeScript"],
+      link: [
+        [
+          {
+            linkData: {
+              label: "Github link",
+              href: "https://github.com/Kitupala/3d-fizzi-project",
+              icon: "SiGithub",
+            },
+          },
+        ],
+        [
+          {
+            linkData: {
+              label: "Vercel link",
+              href: "https://3d-fizzi-project.vercel.app/",
+              icon: "SiVercel",
+            },
+          },
+        ],
+      ],
+      image: "/images/fizzi.jpg",
+    },
   ],
 
   studies: [
