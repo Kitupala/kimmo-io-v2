@@ -6,8 +6,8 @@ import { useData } from "../../context/DataContext";
 
 function Abilities() {
   const { abilities } = useData();
-  const description = abilities.at(0).soft.at(0).description;
-  const softSkills = abilities.at(0).soft.at(1).roster;
+  const description = abilities?.[0]?.soft?.[0]?.description;
+  const softSkills = abilities?.[0]?.soft?.[1]?.roster;
 
   return (
     <Container className="min-h-[calc(100vh-285px)] overflow-hidden">
@@ -18,9 +18,14 @@ function Abilities() {
             Abilities and skills
           </h2>
 
-          <p className="mb-8 animate-fade-translate-in pr-0 text-md text-primary-text opacity-0 [--animation-delay:300ms] md:mb-8 md:pr-12">
+          <p className="mb-8 animate-fade-translate-in pr-0 text-md text-primary-text opacity-0 [--animation-delay:300ms] md:mb-2 md:pr-12">
             {description}
           </p>
+
+          <p className="mb-8 animate-fade-translate-in pr-0 text-md text-primary-text opacity-0 [--animation-delay:300ms] md:mb-8 md:pr-12">
+            Recently, I have been exploring how to utilize Next.js alongside various backend options such as Appwrite, Supabase, Neon Serverless Postgres, and Prismic Headless CMS.
+          </p>
+
 
           <div className="mt-8 hidden animate-fade-translate-in opacity-0 [--animation-delay:500ms] sm:flex md:col-end-2 md:row-start-1  md:mr-12 md:mt-0 md:block">
             <ul className="flex flex-wrap justify-center gap-3 md:justify-start">
