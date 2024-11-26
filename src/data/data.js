@@ -121,34 +121,34 @@ export const data = {
     // },
 
     // ADDRESSBOOK
-    {
-      id: "0.3",
-      title: "AddressBook",
-      description:
-        "My own React practice project. User can basically add, search, sort, edit and delete contacts. App uses Context API for state management.",
-      tech: ["React", "JavaScript", "CSS" ],
-      link: [
-        [
-          {
-            linkData: {
-              label: "Github link",
-              href: "https://github.com/Kitupala/addressbook/",
-              icon: "SiGithub",
-            },
-          },
-        ],
-        [
-          {
-            linkData: {
-              label: "Netlify link",
-              href: "https://kitupala-addressbook.netlify.app/",
-              icon: "SiNetlify",
-            },
-          },
-        ],
-      ],
-      image: "/images/addressbook.jpg",
-    },
+    // {
+    //   id: "0.3",
+    //   title: "AddressBook",
+    //   description:
+    //     "My own React practice project. User can basically add, search, sort, edit and delete contacts. App uses Context API for state management.",
+    //   tech: ["React", "JavaScript", "CSS" ],
+    //   link: [
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Github link",
+    //           href: "https://github.com/Kitupala/addressbook/",
+    //           icon: "SiGithub",
+    //         },
+    //       },
+    //     ],
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Netlify link",
+    //           href: "https://kitupala-addressbook.netlify.app/",
+    //           icon: "SiNetlify",
+    //         },
+    //       },
+    //     ],
+    //   ],
+    //   image: "/images/addressbook.jpg",
+    // },
 
     // THE WILD OASIS
     {
@@ -201,9 +201,31 @@ export const data = {
       image: "/images/kimmo-io-v2.png",
     },
 
-    // THE WILD OASIS SITE
+    // BOOKAKAYAK
     {
       id: "0.6",
+      title: "BookAkayak",
+      description: "Equipment reservation system for the paddling club. A teamwork project implemented during the Buutti Trainee Academy 2024 -coding bootcamp course.",
+      tech: ["React", "TypeScript", "Express", "PostgreSQL", "Docker", "Azure", "shadcn", "Tailwind CSS"],
+      link: [
+        [
+          {
+            linkData: {
+              label: "Gitlab link",
+              href: "https://gitlab.com/greenteam2024/varaakajakki",
+              icon: "SiGitlab",
+            },
+          },
+        ],
+      ],
+      image: "/images/bookakayak.png",
+    },
+
+
+
+    // THE WILD OASIS SITE
+    {
+      id: "0.7",
       title: "The Wild Oasis site",
       description:
         "Website is designed for customers to reserve cabins at the fictional Wild Oasis rental company. Fullstack App with Next.js uses Supabase Open Source SQL Database. The authentication process is carried out using Auth.js.",
@@ -233,7 +255,7 @@ export const data = {
 
     // STORE IT
     {
-      id: "0.7",
+      id: "0.8",
       title: "StoreIt",
       description:
         "A storage management and file sharing platform that lets users upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.",
@@ -266,7 +288,7 @@ export const data = {
       id: "initial",
       title: "Fizzi",
       description:
-        "3D animated e-commerce landing page for the fictional soda brand.",
+        "3D animated e-commerce landing page for the fictional soda brand. Built using Next.js, Prismic CMS, Three.js, Tailwind CSS, and GSAP.",
       tech: ["Next.js", "Prismic", "Three.js", "Tailwind CSS", "GSAP", "TypeScript"],
       link: [
         [
@@ -293,6 +315,18 @@ export const data = {
   ],
 
   studies: [
+    {
+      id: "2.1",
+      title: "Buutti Trainee Academy",
+      description:
+        "A 120-day software development training program including basics of web development, programming languages, software development, and the most commonly used tools and practices used in the day-to-day life of a developer.",
+      tech: ["JavaScript", "TypeScript", "React", "Express", "PostgreSQL"],
+      platform: "Buutti Oy",
+      link: "https://buuttiedu.com/tyonhakijalle/trainee-academy-jyvaskyla-2024/",
+      started: "Mar",
+      completed: "Sep 2024",
+      certificate: "/images/buutti_cert.png",
+    },
     {
       id: "2.0",
       title: "Mastering TypeScript - 2024 Edition",
@@ -432,16 +466,14 @@ export const data = {
         { id: "2.4", title: "JavaScript", grade: 75 },
         { id: "2.5", title: "TypeScript", grade: 60 },
         { id: "2.6", title: "React", grade: 60 },
-        { id: "2.7", title: "Next.js", grade: 40 },
-        { id: "2.8", title: "Framer Motion", grade: 25 },
+        { id: "2.7", title: "Next.js", grade: 50 },
+        // { id: "2.8", title: "Framer Motion", grade: 25 },
         { id: "2.9", title: "Git", grade: 50 },
         { id: "3.0", title: "Figma", grade: 40 },
       ],
       soft: [
         {
           id: "3.1",
-          altDdescription:
-            "A long career as a professional musician has trained me to be a team player who quickly adopts new tasks and adapts to changing situations. However, I'm basically a systematic introvert who has lots of patience delve into things and for problem solving. I have a great passion for learning how to build things with code. Additionally, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a summary of most important skills I've gained so far. ",
           description:
             "Years of experience as a professional musician have taught me the importance of collaboration. I'm able to rapidly familiarize myself with new tasks and adapt to varying situations. Nevertheless, I'm essentially a systematic introvert with lots of patience for exploring matters and for problem-solving. I have a great passion for learning how to build things with code. In addition, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a review of the most important skills I have acquired up to now.",
         },
