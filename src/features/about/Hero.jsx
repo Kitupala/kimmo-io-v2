@@ -14,9 +14,8 @@ function Hero() {
           </h1>
 
           <h2 className="[--animation-delay:400ms]text-red-600 mb-12 translate-y-[-1rem] animate-fade-translate-in text-lg text-primary-text opacity-0 sm:text-xl">
-            Self-taught, self-motivated web developer. <br /> I&apos;m a pixel
-            perfectionist <br className="block sm:hidden" /> &mdash; in a good
-            way.
+            Self-taught and enthusiastic web developer. <br /> I&apos;m a pixel
+            perfectionist <br className="block sm:hidden" /> &mdash; in a beneficial way.
           </h2>
 
           <div className="mb-13 flex animate-zoom-in place-content-center opacity-0 [--animation-delay:900ms]">
@@ -31,9 +30,8 @@ function Hero() {
           </div>
 
           <p className="mx-10 mb-4 animate-fade-in text-md text-primary-text opacity-0 [--animation-delay:1600ms] sm:mx-40">
-            This site showcases some of my <span>recent studies</span> on Udemy
-            online courses, including variety of UI desing examples. Always
-            looking for new challenges. Do you have <span>one for me?</span>
+            This site highlights my latest projects and research on web development.
+            I&apos;m on the lookout for new challenges. Do you have one for me?
           </p>
 
           <p className="mx-10 animate-fade-in text-md text-primary-text opacity-0 [--animation-delay:1600ms] sm:mx-40">
