@@ -18,12 +18,12 @@ function Abilities() {
             Abilities and skills
           </h2>
 
-          <p className="mb-8 animate-fade-translate-in pr-0 text-md text-primary-text opacity-0 [--animation-delay:300ms] md:mb-2 md:pr-12">
+          <p className="mb-8 animate-fade-translate-in pr-0 text-md text-primary-text opacity-0 [--animation-delay:300ms] md:mb-6 md:pr-12">
             {description}
           </p>
 
           <p className="mb-8 animate-fade-translate-in pr-0 text-md text-primary-text opacity-0 [--animation-delay:300ms] md:mb-8 md:pr-12">
-            Recently, I have been exploring how to utilize Next.js alongside various backend options such as Appwrite, Supabase, Neon Serverless Postgres, and Prismic Headless CMS.
+            Recently, I have been exploring how to utilize Next.js alongside various backend options such as Appwrite, Supabase, Neon Serverless Postgres, and Prismic Headless CMS. Here is a review of the most important skills I have acquired up to now.
           </p>
 
 

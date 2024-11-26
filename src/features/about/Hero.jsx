@@ -30,15 +30,15 @@ function Hero() {
           </div>
 
           <p className="mx-10 mb-4 animate-fade-in text-md text-primary-text opacity-0 [--animation-delay:1600ms] sm:mx-40">
-            This site highlights my latest projects and research on web development.
+            This site highlights my latest projects and research on web development.<br/>
             I&apos;m on the lookout for new challenges. Do you have one for me?
           </p>
 
-          <p className="mx-10 animate-fade-in text-md text-primary-text opacity-0 [--animation-delay:1600ms] sm:mx-40">
+           {/*<p className="mx-10 animate-fade-in text-md text-primary-text opacity-0 [--animation-delay:1600ms] sm:mx-40">
             I am a former musician <span>seeking for career path change</span>.
             I love riding fat bike on summery forest trails, <span>coding</span>
             , drumming, progressive music and my black Corvette ′77.
-          </p>
+          </p>*/}
         </div>
       </Container>
     </>

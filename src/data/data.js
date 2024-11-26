@@ -475,7 +475,7 @@ export const data = {
         {
           id: "3.1",
           description:
-            "Years of experience as a professional musician have taught me the importance of collaboration. I'm able to rapidly familiarize myself with new tasks and adapt to varying situations. Nevertheless, I'm essentially a systematic introvert with lots of patience for exploring matters and for problem-solving. I have a great passion for learning how to build things with code. In addition, I'm interested in graphic design and making intuitive UI/UX experiences. Here is a review of the most important skills I have acquired up to now.",
+            "I am a former musician seeking for career path change. Years of experience as a professional musician have taught me the importance of collaboration. I'm able to rapidly familiarize myself with new tasks and adapt to varying situations. Nevertheless, I'm essentially a systematic introvert with lots of patience for exploring matters and for problem-solving. I have a great passion for learning how to build things with code. In addition, I'm interested in graphic design and making intuitive UI/UX experiences.",
         },
         {
           id: "3.2",
