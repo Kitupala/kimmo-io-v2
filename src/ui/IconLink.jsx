@@ -1,4 +1,4 @@
-import { SiGithub, SiNetlify, SiVercel } from "react-icons/si";
+import { SiGithub, SiGitlab, SiNetlify, SiVercel } from "react-icons/si";
 
 function IconLink({ icon, href, label }) {
   return (
@@ -10,6 +10,7 @@ function IconLink({ icon, href, label }) {
         target="_blank"
       >
         {icon === "SiGithub" && <SiGithub />}
+        {icon === "SiGitlab" && <SiGitlab />}
         {icon === "SiNetlify" && <SiNetlify />}
         {icon === "SiVercel" && <SiVercel />}
       </a>
