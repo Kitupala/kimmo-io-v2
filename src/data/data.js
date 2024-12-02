@@ -1,34 +1,34 @@
 export const data = {
   projects: [
     // OMNIFOOD
-    {
-      id: "0.1",
-      title: "Omnifood",
-      description:
-        "Responsive landing page for a fictional food delivery company. Built with modern HTML and CSS.",
-      tech: ["HTML", "CSS"],
-      link: [
-        [
-          {
-            linkData: {
-              label: "Github link",
-              href: "https://github.com/Kitupala/Omnifood/",
-              icon: "SiGithub",
-            },
-          },
-        ],
-        [
-          {
-            linkData: {
-              label: "Netlify link",
-              href: "https://omnifood-kimmo.netlify.app/",
-              icon: "SiNetlify",
-            },
-          },
-        ],
-      ],
-      image: "/images/omnifood.jpg",
-    },
+    // {
+    //   id: "0.1",
+    //   title: "Omnifood",
+    //   description:
+    //     "Responsive landing page for a fictional food delivery company. Built with modern HTML and CSS.",
+    //   tech: ["HTML", "CSS"],
+    //   link: [
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Github link",
+    //           href: "https://github.com/Kitupala/Omnifood/",
+    //           icon: "SiGithub",
+    //         },
+    //       },
+    //     ],
+    //     [
+    //       {
+    //         linkData: {
+    //           label: "Netlify link",
+    //           href: "https://omnifood-kimmo.netlify.app/",
+    //           icon: "SiNetlify",
+    //         },
+    //       },
+    //     ],
+    //   ],
+    //   image: "/images/omnifood.jpg",
+    // },
 
     // FORKIFY
     // {
@@ -221,11 +221,40 @@ export const data = {
       image: "/images/bookakayak.png",
     },
 
+    // ZENTRY
+    {
+      id: "0.7",
+      title: "Zentry",
+      description: "Visually captivating website inspired by Zentry, featuring scroll-triggered animations, geometric transitions, and engaging video storytelling.",
+      tech: ["React", "TypeScript", "Tailwind CSS", "GSAP"],
+      link: [
+        [
+          {
+            linkData: {
+              label: "Gitlab link",
+              href: "https://github.com/Kitupala/awwwards",
+              icon: "SiGithub",
+            },
+          },
+        ],
+        [
+          {
+            linkData: {
+              label: "Vercel link",
+              href: "https://awwwards-ivory.vercel.app/",
+              icon: "SiVercel",
+            },
+          },
+        ],
+      ],
+      image: "/images/zentry.jpg",
+    },
+
 
 
     // THE WILD OASIS SITE
     {
-      id: "0.7",
+      id: "0.8",
       title: "The Wild Oasis site",
       description:
         "Website is designed for customers to reserve cabins at the fictional Wild Oasis rental company. Fullstack App with Next.js uses Supabase Open Source SQL Database. The authentication process is carried out using Auth.js.",
@@ -255,7 +284,7 @@ export const data = {
 
     // STORE IT
     {
-      id: "0.8",
+      id: "0.9",
       title: "StoreIt",
       description:
         "A storage management and file sharing platform that lets users upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.",
