@@ -25,9 +25,6 @@ function Project({ project }) {
           {project.title}
         </h3>
         <div className="mt-5 max-w-lg rounded-md md:max-w-none md:border-2 md:border-transparent-sm md:bg-background/80 md:px-5 md:pb-5 md:pt-4 md:shadow-lg">
-          {/* {project.id === "0.7" && (
-            <span className="text-sm text-muted-text">Update 17/9</span>
-          )} */}
           <p className="text-md">{project.description}</p>
         </div>
 
@@ -45,11 +42,11 @@ function Project({ project }) {
       </div>
 
       {/* Project image */}
-      <div className="-z-20 col-span-12 col-end-12 row-span-full flex items-center md:col-span-7 md:col-end-12">
+      <div className="-z-20 col-span-12 col-end-12 row-span-full flex items-start md:col-span-7 md:col-end-12">
         <div className="overflow-hidden rounded-md border-2 border-transparent-sm md:shadow-lg ">
           <img
             className={classNames(
-              "-z-30 hidden min-h-full object-cover opacity-80 custom-bp-sm:block md:object-contain",
+              "-z-30 hidden h-auto object-cover opacity-80 custom-bp-sm:block md:object-contain",
               isDarkMode && "opacity-60",
             )}
             src={project.image}
@@ -59,7 +56,7 @@ function Project({ project }) {
       </div>
 
       {/* Project technologies */}
-      <div className="col-span-12 col-end-12 flex flex-col md:z-0 md:row-span-full md:items-end md:justify-end md:pt-2">
+      <div className="col-span-12 col-end-12 flex flex-col md:z-0 md:row-span-full pb-20 md:items-end md:justify-end md:pt-2">
         <ul
           className="mt-1 flex flex-wrap opacity-75 [&_li]:mr-1.5 last:[&_li]:mr-0"
           aria-label="Technologies used"
