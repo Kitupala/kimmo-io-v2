@@ -1,34 +1,34 @@
 export const data = {
   projects: [
     // OMNIFOOD
-    // {
-    //   id: "0.1",
-    //   title: "Omnifood",
-    //   description:
-    //     "Responsive landing page for a fictional food delivery company. Built with modern HTML and CSS.",
-    //   tech: ["HTML", "CSS"],
-    //   link: [
-    //     [
-    //       {
-    //         linkData: {
-    //           label: "Github link",
-    //           href: "https://github.com/Kitupala/Omnifood/",
-    //           icon: "SiGithub",
-    //         },
-    //       },
-    //     ],
-    //     [
-    //       {
-    //         linkData: {
-    //           label: "Netlify link",
-    //           href: "https://omnifood-kimmo.netlify.app/",
-    //           icon: "SiNetlify",
-    //         },
-    //       },
-    //     ],
-    //   ],
-    //   image: "/images/omnifood.jpg",
-    // },
+    {
+      id: "0.1",
+      title: "Omnifood",
+      description:
+        "Responsive landing page for a fictional food delivery company. Built with modern HTML and CSS.",
+      tech: ["HTML", "CSS"],
+      link: [
+        [
+          {
+            linkData: {
+              label: "Github link",
+              href: "https://github.com/Kitupala/Omnifood/",
+              icon: "SiGithub",
+            },
+          },
+        ],
+        [
+          {
+            linkData: {
+              label: "Netlify link",
+              href: "https://omnifood-kimmo.netlify.app/",
+              icon: "SiNetlify",
+            },
+          },
+        ],
+      ],
+      image: "/images/omnifood.jpg",
+    },
 
     // FORKIFY
     // {
